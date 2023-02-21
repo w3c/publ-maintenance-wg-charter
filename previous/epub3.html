@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>EPUB 3 Working Group Charter</title>
+    	<link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+    	<link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
+    	<link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+		<style>
+			.warning {
+				box-shadow: 10px 5px 3px 0px darkgrey;
+				border-top-width: thin;
+				border-right-width: thin;
+				border-bottom-width: thin;
+				border-left-width: thin;
+				border-top-style: solid;
+				border-right-style: solid;
+				border-bottom-style: solid;
+				border-left-style: solid;
+				border-radius: 3px;
+				width: 80%;
+				padding-top: 0.5em;
+				padding-right: 0.5em;
+				padding-bottom: 0.5em;
+				padding-left: 0.5em;
+			}
+
+			.warning h1 {
+				font-size: 120%;
+				font-style: italic;
+				font-weight: bold;
+				text-align: center;
+
+			}
+
+			ul#navbar {
+				font-size: small;
+			}
+
+
+			dt.spec {
+				font-weight: bold;
+			}
+
+			dt.spec new {
+				background: yellow;
+			}
+
+			ul.out-of-scope > li {
+				font-weight: bold;
+			}
+
+			ul.out-of-scope > li > ul > li{
+				font-weight: normal;
+			}
+
+			.issue {
+				background: cornsilk;
+				font-style: italic;
+			}
+
+			.todo {
+				color: #900 !important;
+				background: yellow !important;
+			}
+
+			footer {
+				font-size: small;
+			}
+
+			aside.comment {
+				color: #900;
+				background: oldlace;
+				border: 1px solid black;
+				padding:  0.5em;
+			}
+
+		</style>
+	</head>
+  	<body>
+		<header id="header">
+		<aside>
+			<ul id="navbar">
+			<li><a href="#scope">Scope</a></li>
+			<li><a href="#deliverables">Deliverables</a></li>
+			<li><a href="#success-criteria">Success Criteria</a></li>
+			<li><a href="#coordination">Coordination</a></li>
+			<li><a href="#participation">Participation</a></li>
+			<li><a href="#communication">Communication</a></li>
+			<li><a href="#decisions">Decision Policy</a></li>
+			<li><a href="#patentpolicy">Patent Policy</a></li>
+			<li><a href="#licensing">Licensing</a></li>
+			<li><a href="#about">About this Charter</a></li>
+			</ul>
+		</aside>
+		<p>
+			<a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+		</p>
+		</header>
+
+    	<main>
+			<h1 id="title">EPUB 3 Working Group Charter</h1>
+
+			<p class="mission">
+				The <strong>mission</strong> of the EPUB 3 Working Group is to maintain and develop the EPUB 3 family of specifications, to represent the EPUB community in the W3C, and to support EPUB 3 content creators and consumers by further advancing, refining, and clarifying the current EPUB 3 specification. The Working Group will also work closely with the Publishing Community Group to support the maintenance of validation tools and the creation of documentation.
+			</p>
+
+			<div class="noprint">
+				<p class="join"><a href="https://www.w3.org/2004/01/pp-impl/125377/join">Join the EPUB 3 Working Group</a></p>
+			</div>
+
+			<section id="details">
+				<table class="summary-table">
+					<tr id="Duration">
+						<th>
+							Start date
+						</th>
+						<td>
+							<span>2020-08-14</span>
+						</td>
+					</tr>
+					<tr id="CharterEnd">
+						<th>
+							End date
+						</th>
+						<td>
+							2023-08-31
+						</td>
+					</tr>
+
+					<!-- <tr class="todo">
+					<th>Charter extension</th>
+					<td>See <a href="#history">Change History</a>.
+					</td>
+					</tr> -->
+
+					<tr>
+						<th>
+							Chairs
+						</th>
+						<td>
+							Dave Cramer, Invited Expert<br>
+							Wendy Reid, Rakuten Kobo<br>
+							Shinya Takami (高見真也), Kadokawa/Bookwalker
+						</td>
+						</tr>
+					<tr>
+						<th>
+							Team Contacts
+						</th>
+						<td>
+							<a href="mailto:ivan@w3.org">Ivan Herman</a> (0.2 <abbr title="Full-Time Equivalent">FTE</abbr>)
+						</td>
+					</tr>
+					<tr>
+						<th>
+							Meeting Schedule
+						</th>
+						<td>
+							<strong>Teleconferences:</strong> 1 hour calls to be held weekly
+							<br>
+							<strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+						</td>
+					</tr>
+				</table>
+			</section>
+
+
+
+      		<section id="scope" class="scope">
+				<h2>Scope</h2>
+
+				<p>
+					EPUB is a distribution and interchange format for digital publications and documents that has been in global use by publishers and vendors for over a decade. The latest version of EPUB, <a href='https://www.w3.org/publishing/epub32/epub-spec.html'>EPUB 3.2</a>, has been published by the <a href='https://www.w3.org/community/epub3/'>W3C EPUB 3 Community Group</a> as a Final Specification. EPUB 3 is strongly related to, and reliant upon, W3C specifications: it provides a means of representing, packaging, and encoding structured and semantically enhanced Web content—including <a href="https://html.spec.whatwg.org/multipage/">HTML</a>, <a href="https://www.w3.org/Style/CSS/specs.en.html">CSS</a>, <a href="https://www.w3.org/TR/SVG11/">SVG</a>, <a href="https://www.w3.org/TR/MathML/">MathML</a> and other resources—for distribution in a single–file container.
+				</p>
+
+				<p>
+					However, the interoperability of EPUB 3 content, and the conformance of EPUB 3 reading systems, remain a serious issue. There is a need for a more rigorous and comprehensive testing of EPUB 3; this may also mean the need for a further clarification of the standard text itself. These needs were reinforced and informed by the community in a survey Publishing@W3C sent out to the digital publishing community in February 2020. An overview of the results and link to the complete results can be found <a href="https://www.w3.org/blog/2020/05/publishingw3c-epub-survey-results/">here</a>. (See also the <a href="https://www.w3.org/blog/2020/03/listen-to-the-people-the-future-of-epub-and-new-directions-for-publishing-w3c/">separate blog</a> for more background.) The EPUB 3 Working Group will advance, refine, and clarify the EPUB 3 standard to ensure its relevance as digital publishing continues to evolve, and specify a comprehensive testing environment for EPUB 3.
+				</p>
+
+				<p>
+					The Working Group will produce a new version of EPUB 3, codenamed “EPUB 3.X” for the purposes of this charter; the Working Group will have to define the correct numbering scheme (e.g., EPUB 3.2.1, or EPUB 3.3, etc.). The Working Group will <em>not</em> change the EPUB 3.2 specification itself.
+				</p>
+
+				<p>
+					The scope of the EPUB 3 Working Group includes the following:
+				</p>
+
+				<ul>
+					<li>
+						Improvements and clarifications related to reading system conformance.
+					</li>
+					<li>
+						Development of a test suite to check reading system conformance.
+					</li>
+					<li>
+						Clarifications to the current use of open Web technologies, such as supported JavaScript APIs and CSS modules.
+					</li>
+					<li>
+						Enhancements and improvements to internationalization of technologies defined for EPUB to ensure global usability. While the content of a digital publication (HTML, CSS, etc.) already have advanced internationalization features, an EPUB 3 publication also includes additional textual content like metadata, table of contents, etc., which must abide to all requirements of internationalization.
+					</li>
+					<li>
+						Continued integration of errata and bug fixes.
+					</li>
+					<li>
+						Integration of new Open Web Platform technologies for enhanced digital publishing experiences; these may include, but not limited to:
+						<ul>
+							<li>
+								new media types, such as OPUS, BPG, or WebP;
+							</li>
+							<li>
+								allowing the HTML Serialization of HTML5, including whether and how to handle xml-specific technologies like <code>epub:type</code> and the <code>ssml:*</code> attributes.
+							</li>
+						</ul>
+						Such new technical features should be incubated by the <a href="https://www.w3.org/community/publishingcg/">Publishing Community Group</a> before being considered by this Working Group.  Also, the effects on deployed systems and checking tools, and the risk of additional cost for adoption, must be carefully analyzed. In case of doubt, such features should not be added to EPUB 3.X.
+					</li>
+					<li>
+						Improvements to the <a href='#a11y'>EPUB Accessibility</a> specification, that may include, but not be limited to:
+						<ul>
+							<li>
+								considering improvements for facilitating early adoption of EPUB Accessibility in Europe, while seeking a stronger international consensus on specifications through W3C discussion;
+							</li>
+							<li>
+								enhancing EPUB Accessibility features, for instance by: aligning with advancements in WCAG; explore possibility of adding accessibility requirements for fixed layout documents (FXL); updating EPUB Accessibility to align with the evolving EPUB3 suite.
+							</li>
+						</ul>
+					</li>
+					<li>Maintenance of EPUB registries.</li>
+				</ul>
+
+				<p>
+					The primary goal of EPUB 3.X is to remain compatible with existing content. <em>Any existing valid EPUB 3.2 should remain valid under EPUB 3.X, unless it relies on features discovered to have serious issues (such as a security bug).</em>
+				</p>
+
+				<p>
+					The Working Group will also work with other groups, as appropriate, in the development of standards for digital publishing (e.g., an update to the <a href='https://www.w3.org/TR/dpub-aria-1.0/'>Digital Publishing WAI-ARIA Module</a>).
+				</p>
+
+				<section id="section-out-of-scope">
+					<h3 id="out-of-scope">Out of Scope</h3>
+					<p>The following features are out of scope, and will not be addressed by this Working Group group.</p>
+
+					<ul>
+						<li>Removal of any existing features defined by EPUB 3.2.
+						Existing features will only be deprecated if they are not needed
+						to support existing EPUB 3 content, as stated in <a href="https://www.w3.org/TR/html-design-principles/#support-existing-content">HTML’s design principles</a>.</li>
+						<li>Digital Rights Management (DRM).</li>
+						<li>New serialization format for the <a href='https://www.w3.org/publishing/epub32/epub-packages.html#sec-package-doc'>EPUB Package Document</a>.</li>
+						<li>Changes to the EPUB Package Document <a href='https://www.w3.org/publishing/epub32/epub-packages.html#sec-package-elem'>version number</a>. The number will remain "3.0" to ensure reading systems do not reject EPUB 3 files.</li>
+						<li>Alternatives to the <a href='https://www.w3.org/publishing/epub32/epub-ocf.html'>EPUB Open Container format</a>.</li>
+						<li>Any new elements, attributes, properties, or values that would create a fork from open web technologies (e.g., HTML, CSS or SVG).</li>
+						<li>Any new Package Document properties or values that influence rendering inside viewports that can be deferred to more appropriate working groups.</li>
+						<li>EPUB authoring tools.</li>
+					</ul>
+				</section>
+
+      		</section>
+
+      		<section id="deliverables">
+				<h2>
+				Deliverables
+				</h2>
+
+				<p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/Publishing/groups/epub-wg/PubStatus">group publication status page</a>.</p>
+
+				<p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+
+		        <section id="normative">
+					<h3>
+						Normative Specifications
+					</h3>
+					<p>
+						The EPUB 3 Working Group Group will deliver the following W3C normative specifications:
+					</p>
+
+          			<dl>
+            			<dt id="epub3" class="spec">EPUB 3.X</dt>
+						<dd>
+              				<p>
+								EPUB 3 defines a distribution and interchange format for digital publications and documents. The EPUB format provides a means of representing, packaging and encoding structured and semantically enhanced Web content—including HTML, CSS, SVG and other resources—for distribution in a single-file container.
+							</p>
+							<p>
+								EPUB 3 is modular in nature: it consists of a family of specifications that define the core features and functionality of the standard. This specification represents the primary entry point to standard, but the specifications listed in this section are all a part of EPUB 3.
+							</p>
+
+							<p class="draft-status">
+								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-spec.html">Final Community Group Specification</a>.
+							</p>
+
+							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+						</dd>
+
+						<dt id="package" class="spec">EPUB Packages 3.X</dt>
+						<dd>
+              				<p>
+								This specification defines semantics and conformance requirements for an EPUB Package. Each Package represents one Rendition of an EPUB Publication, and is defined by a Package Document that describes the content of the Rendition and sets the requirements for how Publication Resources are associated.
+							</p>
+							<p>
+								This specification also defines the EPUB Navigation Document, a machine- and human-readable specialization of an EPUB Content Document that provides navigation aids such as the table of contents.
+							</p>
+
+							<p class="draft-status">
+								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-packages.html">Final Community Group Specification</a>.
+							</p>
+
+							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+						</dd>
+
+						<dt id="content" class="spec">EPUB Content Documents 3.X</dt>
+						<dd>
+              				<p>
+								This specification defines profiles of HTML, SVG, and CSS for use in the context of EPUB Publications.
+							</p>
+
+							<p class="draft-status">
+								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-contentdocs.html">Final Community Group Specification</a>.
+							</p>
+
+							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+						</dd>
+
+						<dt id="ocf" class="spec">EPUB Open Container Format 3.X</dt>
+						<dd>
+              				<p>
+								This specification defines a file format and processing model for encapsulating the set of related resources that comprise an EPUB Publication into a single-file container, the EPUB Container. This format relies on the <a href='https://www.oasis-open.org/committees/download.php/12572/OpenDocument-v1.0-os.pdf'>Open Document Format for Office Applications (OpenDocument) v1.0. 1</a> .
+							</p>
+
+							<p class="draft-status">
+								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-ocf.html">Final Community Group Specification</a>.
+							</p>
+
+							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+						</dd>
+
+						<dt id="media" class="spec">EPUB Media Overlays 3.X</dt>
+						<dd>
+              				<p>
+								This specification defines a usage of <a href='http://www.w3.org/TR/SMIL3/'>SMIL 3</a> (Synchronized Multimedia Integration Language), the Package Document, CSS Style Sheets, and EPUB Content Documents for representation of audio synchronized with the EPUB Content Document.
+							</p>
+
+							<p class="draft-status">
+								<b>Draft state:</b> <a href="https://www.w3.org/publishing/epub32/epub-mediaoverlays.html">Final Community Group Specification</a>.
+							</p>
+
+							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+						</dd>
+
+						<dt id="a11y" class="spec">EPUB Accessibility 1.X</dt>
+						<dd>
+              				<p>
+								EPUB Accessibility defines discovery and content accessibility requirements for EPUB Publications. The specification will build upon WCAG and adds accessibility requirements specific to publishing.
+							</p>
+
+							<p class="draft-status">
+								<b>Draft state:</b> <a href="https://www.w3.org/Submission/2017/SUBM-epub-a11y-20170125/">W3C Member Submission</a>.
+							</p>
+
+							<p class="milestone"><b>Expected completion:</b> Q1 2023</p>
+						</dd>
+          			</dl>
+        		</section>
+
+				<section id="wg-other-deliverables">
+					<h3>
+						Other Deliverables
+					</h3>
+					<p>
+						Other non-normative documents may be created such as:
+					</p>
+					<ul>
+						<li>Test suite and implementation report for the specification.</li>
+						<li>EPUB Accessibility Techniques (based on the <a href="http://idpf.org/epub/a11y/techniques/techniques.html">corresponding <abbr title="International Digital Publishing Forum">IDPF</abbr> document</a>).</li>
+						<li>Guides on improving alignment with the Open Web Platform, such as:
+							<ul>
+								<li>Which Web APIs that are suitable for EPUB usage.should be available in EPUB?</li>
+								<li>Usage of <a href="https://www.w3.org/TR/wasm-core-1/">WASM</a> in EPUB content.</li>
+								<li>Relationship of CORS requirement, externally hosted resources, and EPUB content.</li>
+							</ul>
+						</li>
+					</ul>
+					<p>
+						Furthermore, the Working group will review the existing EPUB registries, originally published by <a href='http://idpf.org'><abbr title="International Digital Publishing Forum">IDPF</abbr></a> and, if necessary, will set up a long term control at W3C for their maintenance. These registries include:
+					</p>
+					<ul>
+						<li><a href='http://www.idpf.org/epub/registries/authorities/'>EPUB Subject Authorities Registry</a>.</li>
+						<li><a href='http://www.idpf.org/epub/registries/roles'>EPUB Collection Roles Registry</a>.</li>
+						<li><a href='http://www.idpf.org/epub/vocab/package/types'>EPUB Publication Types Registry</a>.</li>
+						<li><a href='http://www.idpf.org/epub/vocab/structure/'>EPUB Structural Semantics Vocabulary</a>.</li>
+					</ul>
+				</section>
+
+				<section id="timeline">
+					<h3>Timeline</h3>
+					<p>
+						These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.
+					</p>
+					<ul>
+						<li>September 2020: First teleconference.</li>
+						<li>October 2020: “Virtual” face-to-face meeting (as part of TPAC 2020).</li>
+						<li>February 2021: FPWD for the EPUB 3.X suite, which includes EPUB Accessibility 1.X.</li>
+						<li>May 2021: Updated Working Draft for EPUB Accessibility 1.X.</li>
+						<li>November 2021: Candidate Recommendation for the EPUB 3.X suite.</li>
+						<li>February 2023: Recommendation for EPUB 3.X.</li>
+					</ul>
+				</section>
+      		</section>
+
+			<section id="success-criteria">
+				<h2>Success Criteria</h2>
+
+				<p>The EPUB 3 Working Group’s work is considered a success
+				if:</p>
+
+				<ol>
+					<li>There are multiple, independent, interoperable implementations
+					of EPUB 3.X that are widely used.</li>
+					<li>Existing content is supported. All conforming EPUB 3.2 publications should remain conformant to EPUB 3.X.</li>
+					<li>Improvements to the standard solve immediate and quantifiable issues faced in the EPUB ecosystem.</li>
+					<li>Changes that affect the global ecosystem
+					(including authors, publishers, distributors, retailers, reading systems, and tool makers)
+					are minimized, and made only after careful consideration
+					of how they would affect all constituencies.</li>
+					<li>Validation tools such as EPUBCheck fully support EPUB 3.X.</li>
+				</ol>
+				<p>
+					In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.
+				</p>
+				<p>
+					Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.
+				</p>
+				<p>
+					There must be testing plans for each specification, starting from the earliest drafts.
+				</p>
+				<p>
+					Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+					recommendations for maximizing accessibility in implementations.
+				</p>
+				<p>
+					To promote interoperability, all changes made to specifications must have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.
+				</p>
+			</section>
+
+      		<section id="coordination">
+        		<h2>Coordination</h2>
+        		<p>
+					For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/process/charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each specification.  The Working Group is advised to seek a review at least 3 months before first entering <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a review.
+				</p>
+
+        		<p>
+					Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:
+				</p>
+
+        		<section>
+					<h3 id="w3c-coordination">W3C Groups</h3>
+					<dl>
+						<dt><a href="https://www.w3.org/community/publishingbg/">Publishing Business Group</a></dt>
+						<dd>
+							<p>
+								The Publishing Business Group will provide business cases and guidance to the working group as needed. PBG will also provide support for industry outreach.
+							</p>
+						</dd>
+
+						<dt><a href="https://www.w3.org/community/publishingcg/">Publishing Community Group</a></dt>
+						<dd>
+							<p>
+								The Publishing Community Group will function as an incubator group to explore, test, and possibly specify new ideas that may be included, eventually, into later versions of EPUB 3.X.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/Style/CSS/">CSS Working Group</a></dt>
+						<dd>
+							<p>
+								The EPUB 3 Working Group will contribute to the CSS Working Group with the development and testing of new and existing CSS functionalities that are of interest to the publishing community. The group will designate liaisons to work with the CSS Working Group on issues as needed. Liaisons will ideally be part of both groups.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/community/wicg/">Web Incubator Community Group (WICG)</a></dt>
+						<dd>
+							<p>
+								The Web Platform Incubator Community Group (WICG) provides a lightweight venue for proposing and discussing new web platform features, like new HTML features or Web Platform API-s. Some of those may have an influence on the future evolution of EPUB 3. Also, new technical features arising during the development of EPUB 3.X may have relevance for the Web Platform in general, in which case they should be explored further together with with the Web Platform Incubator Community Group.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a></dt>
+						<dd>
+							<p>
+								The Accessibility Guidelines Working Group develops guidelines to make Web content accessible for people with disabilities, and is responsible for the development and maintenance of the WCAG series of Recommendations. The EPUB Accessibility specification is already based on WCAG, and a liaison will be set up to ensure that any new features in EPUB 3.X, in particular EPUB Accessibility 1.X, would continue to refer to WCAG 2.X, when applicable.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
+						<dd>
+							<p>
+								The APA WG provides horizontal review of potential accessibility issues in the architecture, including knowledge domains for STEM accessibility; as well as accessibility impact of a specification.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
+						<dd>
+							<p>
+								The ARIA Working Group is responsible for the development of ARIA and the development of DPUB-ARIA Module 1.1. The EPUB 3 Working Group will support the ARIA Working Group’s work to maintain this specification.
+							</p>
+						</dd>
+						<dt><a href="https://www.w3.org/community/sync-media-pub/">Synchronized Multimedia for Publications Community Group</a></dt>
+						<dd>
+							<p>
+								This Community Group plans to produce a simplified version of audio and video synchronization that may become part of a future EPUB version.
+							</p>
+						</dd>
+
+						<dt><a href='https://www.w3.org/Graphics/SVG/'>SVG Working Group</a></dt>
+						<dd>
+							<p>
+								The SVG Working Group is responsible for the development of <a href='https://www.w3.org/TR/SVG11/'>SVG</a>. This development may have an influence on the future evolution of EPUB 3. Also, new technical features arising during the development of EPUB 3.X may lead to new feature requirements for SVG, in which case these should be explored further together with the SVG Working Group (and the <a href='https://www.w3.org/community/svgcg/'>SVG CG</a>).
+							</p>
+						</dd>
+
+						<dt><a href="http://www.w3.org/community/bdcomacg/">BD Comics Manga CG </a></dt>
+						<dd>
+							<p>
+								The BD Comics Manga Community Group is focused incubating features related to the publication of comics, manga, and <span lang=fr>bandes dessinées</span>. Issues and requirements arising in that Community Group may also influence the further evolution of EPUB 3.X.
+							</p>
+						</dd>
+					</dl>
+        		</section>
+
+				<section>
+					<h3 id="external-coordination">External Organizations</h3>
+					<dl>
+						<dt><a href="http://readium.org/">Readium Foundation</a></dt>
+						<dd>
+							<p>
+								The Readium projects (Readium Mobile, Readium Desktop, and Readium Web) are at the core of a number of EPUB 3 reading systems around the world. As such, the feedback of that development will be essential to the work around EPUB 3.X.
+							</p>
+						</dd>
+						<dt><a href="https://www.edrlab.org/">EDRLab</a></dt>
+						<dd>
+							<p>
+								EDRLab is actively working on the different Readium projects and develops an open-source and highly accessible desktop reading application. They are implementers of EPUB 3 and will provide valuable feedback for the evolution of EPUB 3.X.
+							</p>
+						</dd>
+
+						<dt><a href="https://daisy.org/">DAISY Consortium</a></dt>
+						<dd>
+							<p>
+								The DAISY consortium currently manages <a href="http://epubtest.org/">epubtest.org</a>,
+								the support grid for EPUB. They also provide support on specification writing, accessibility,
+								and feedback on EPUB implementation. Their feedback on the further development of EPUB in general, and EPUB Accessibility in particular, will be essential for the EPUB 3.X development.
+							</p>
+						</dd>
+
+						<dt><a href="https://github.com/w3c/epubcheck">EPUBCheck</a> Community</dt>
+						<dd>
+							<p>
+								<a href="https://github.com/w3c/epubcheck">EPUBCheck</a>, the EPUB validation tool, is an open source software, currently maintained by the <a href="http://www.daisy.org/">DAISY Consortium</a> on behalf of the W3C, and widely used by virtually all major publishers around the World. The EPUB 3 Working Group will work closely with the developers of EPUBCheck.
+							</p>
+						</dd>
+
+						<dt><a href="https://whatwg.org">WHATWG</a></dt>
+						<dd>
+							<p>
+								The WHATWG is responsible for the development of <a href='https://html.spec.whatwg.org/multipage/'>HTML</a>. This may have an influence on the future evolution of EPUB 3. Also, new technical features arising during the development of EPUB 3.X may lead to new feature requirements for HTML, in which case these should be explored further together with the WHATWG (and the <a href='https://www.w3.org/community/wicg/'>WICG</a>).
+							</p>
+						</dd>
+
+						<dt><a href="https://www.iso.org">International Standards Organization (ISO)</a></dt>
+						<dd>
+							<p>
+								An earlier version of EPUB (<a href="http://idpf.org/epub/301">EPUB 3.0.1</a>) was published as an ISO standard ISO/IEC TS 30135:2014 (parts 1-7). This Working Group and ISO may consider updating that ISO specification once the new Recommendations are published.
+							</p>
+							<p>
+								Additionally, there are currently activities within <a href="https://isotc.iso.org/livelink/livelink?func=ll&objId=8913149&objAction=browse&sort=name">ISO/IEC JTC 001/SC34</a> on specifications that rely on earlier versions of EPUB (e.g., EPUB Preservation, EPUB Accessibility). A liaison has to be maintained on, possibly, updating those ISO specifications to the latest versions of EPUB 3, specified by this Working Group.
+							</p>
+						</dd>
+
+						<dt><a href="https://www.ieeeltsc.org/">IEEE Learning Technology Standard Committee</a></dt>
+						<dd>
+							<p>
+								This study group considers developing reports, guides, etc., addressing the requirements for e-books intended for use in learning platforms. A liaison with the study group will provide important inputs for the developments of EPUB 3.x with the goal of making it useful for educational publishing community.
+							</p>
+						</dd>
+					</dl>
+				</section>
+			</section>
+
+			<section class="participation">
+				<h2 id="participation">
+					Participation
+				</h2>
+				<p>
+					To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+				</p>
+				<p>
+					The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+				</p>
+				<p>
+					The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+				</p>
+				<p>
+					Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+					W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.
+				</p>
+			</section>
+
+
+			<section id="communication">
+				<h2>
+					Communication
+				</h2>
+				<p id="public">
+					Technical discussions for this Working Group Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editors’ Drafts of specifications will be developed on a public repository and may permit direct public contribution requests.
+					The meetings themselves are not open to public participation, however.
+				</p>
+				<p>
+					Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org//publishing/groups/epub-wg/">EPUB 3 Working Group home page.</a>
+				</p>
+				<p>
+					Most EPUB 3 Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+				</p>
+				<p>
+					This group primarily conducts its technical work on <a id="public-github" href="https://github.com/epub-wg/">GitHub issues</a>. The public is invited to review, discuss and contribute to this work.
+				</p>
+				<p>
+					The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+				</p>
+			</section>
+
+
+
+			<section id="decisions">
+				<h2>
+				Decision Policy
+				</h2>
+				<p>
+					This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+				<p>
+					However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+				</p>
+				<p>
+					To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional. A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from 5 to 10 working days, depending on the chair's evaluation of the group consensus on the issue. If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group Group.
+				</p>
+				<p>
+					All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+				</p>
+				<p>
+					This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+				</p>
+			</section>
+
+			<section id="patentpolicy">
+				<h2>Patent Policy</h2>
+				<p>
+					This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis. For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+				</p>
+			</section>
+
+			<section id="licensing">
+				<h2>Licensing</h2>
+				<p>
+					This Working Group Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.
+				</p>
+			</section>
+
+			<section id="about">
+				<h2>About this Charter</h2>
+				<p>
+					This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+				</p>
+
+				<section id="history">
+					<h3>
+						Charter History
+					</h3>
+
+					<p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+					<table class="history">
+						<tbody>
+							<tr>
+								<th>Charter Period</th>
+								<th>Start Date</th>
+								<th>End Date</th>
+								<th>Changes</th>
+							</tr>
+							<tr>
+								<th><a href="https://www.w3.org/2020/08/epub-wg-charter.html">Initial Charter</a></th>
+								<td><i>14 August, 2020</i></td>
+								<td><i>28 February, 2023</i></td>
+								<td><i></i></td>
+							</tr>
+							<tr>
+								<th>Rechartered</th>
+								<td>15 December 2020</td>
+								<td>28 February 2023</td>
+								<td>New Patent Policy</td>
+							</tr>
+
+							<tr>
+								<th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021AprJun/0016.html">Changed Dave Cramer's affiliation</a></th>
+								<td>14 April 2021</td>
+								<td><i>n/a</i></td>
+								<td>Changed affiliation to “Invited Expert”</td>
+							</tr>
+							<tr>
+								<th><a href="">Charter extended</a></th>
+								<td><i>15 January 2023</i>
+								</td>
+								<td>
+								<i>31 August 2023</i>
+								</td>
+								<td>
+								<p></p>
+								</td>
+						</tbody>
+					</table>
+				</section>
+      		</section>
+    	</main>
+
+    	<hr>
+
+		<footer>
+			<address>
+				<a href="mailto:ivan@w3.org">Ivan Herman</a>
+			</address>
+
+			<p class="copyright">
+				<a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2020 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+			</p>
+		</footer>
+	</body>
+</html>
