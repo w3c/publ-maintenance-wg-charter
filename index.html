@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
   <head>
     <meta charset="utf-8">
 
@@ -26,11 +27,11 @@
         background: yellow;
       }
 
-      ul.out-of-scope > li {
+      ul.out-of-scope>li {
         font-weight: bold;
       }
 
-      ul.out-of-scope > li > ul > li{
+      ul.out-of-scope>li>ul>li {
         font-weight: normal;
       }
 
@@ -46,8 +47,10 @@
       footer {
         font-size: small;
       }
+
     </style>
   </head>
+
   <body>
     <header id="header">
       <aside>
@@ -55,7 +58,7 @@
           <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
-		      <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#success-criteria">Success Criteria</a></li>
           <li><a href="#coordination">Coordination</a></li>
           <li><a href="#participation">Participation</a></li>
           <li><a href="#communication">Communication</a></li>
@@ -75,9 +78,12 @@
       <h1 id="title">[PROPOSED] Publication Maintenance Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
-			<p class="mission">
-				The <strong>mission</strong> of the Publication Maintenance Working to maintain the W3C Recommendations, as well related Notes, in the area of Digital Publishing published by the <a href="https://www.w3.org/groups/wg/publishing/publications">Audiobooks</a> and the <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a> Working Groups.
- 			</p>
+      <p class="mission">
+        The <strong>mission</strong> of the Publication Maintenance Working to maintain the W3C Recommendations, as well
+        related Notes, in the area of Digital Publishing published by the <a
+          href="https://www.w3.org/groups/wg/publishing/publications">Audiobooks</a> and the <a
+          href="https://www.w3.org/groups/wg/epub/publications">EPUB</a> Working Groups.
+      </p>
 
       <div class="noprint">
         <p class="join">
@@ -86,7 +92,8 @@
       </div>
 
       <p style="padding: 0.5ex; border: 1px solid green">
-        This proposed charter is available on <a href="https://github.com/w3c/pmwg-charter">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/pmwg-charter/issues">issues</a></i>.
+        This proposed charter is available on <a href="https://github.com/w3c/pmwg-charter">GitHub</a>.
+        Feel free to raise <a href="https://github.com/w3c/pmwg-charter/issues">issues</a></i>.
       </p>
 
       <div id="details">
@@ -96,15 +103,17 @@
               Charter Status
             </th>
             <td>
-              <li>See the <a href="https://www.w3.org/groups/wg/pm/charters">group status page</a> and <a href="#history">detailed change history</a>.</i>
+              <li>See the <a href="https://www.w3.org/groups/wg/pm/charters">group status page</a> and <a
+                  href="#history">detailed change history</a>.</i>
             </td>
-          </tr>		
+          </tr>
           <tr id="Duration">
             <th>
               Start date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is
+                approved)</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -119,12 +128,12 @@
             <th>
               Chairs
             </th>
-						<td>
-							Dave Cramer, Invited Expert<br>
-							Wendy Reid, Rakuten Kobo<br>
+            <td>
+              Dave Cramer, Invited Expert<br>
+              Wendy Reid, Rakuten Kobo<br>
               Tzviya Siegman, John Wiley &amp; Sons., Inc.<br>
-							Shinya Takami (高見真也), Kadokawa/Bookwalker
-						</td>
+              Shinya Takami (高見真也), Kadokawa/Bookwalker
+            </td>
           </tr>
           <tr>
             <th>
@@ -138,11 +147,11 @@
             <th>
               Meeting Schedule
             </th>
-						<td>
-							<strong>Teleconferences:</strong> On an as-needed basis, at least every quarter.
-							<br>
-							<strong>Face-to-face:</strong> None expected.
-						</td>
+            <td>
+              <strong>Teleconferences:</strong> On an as-needed basis, at least every quarter.
+              <br>
+              <strong>Face-to-face:</strong> None expected.
+            </td>
           </tr>
         </table>
       </div>
@@ -150,32 +159,58 @@
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
         <p>
-          In the past few years the <a href="https://www.w3.org/publishing/groups/publ-wg/">Audiobooks Working Group</a> acted as a Maintenance Group for the Publishing Working Group. Furthermore, with the successful completion, in 2023, of the  <a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB Working Group</a> the need for an EPUB Maintenance Working Group came to the fore. As the active community behind these two groups, including the chairs and editors, is virtually identical, and because there is also a major overlap of the technical content, the proposal is to create one Working Group to maintain the complete palette of Recommendations in the area of Digital Publishing, instead of unnecessarily duplicating the efforts. 
+          In the past few years the <a href="https://www.w3.org/publishing/groups/publ-wg/">Audiobooks Working Group</a>
+          acted as a Maintenance Group for the Publishing Working Group.
+          Furthermore, with the successful completion, in 2023, of the <a
+            href="https://www.w3.org/publishing/groups/epub-wg/">EPUB Working Group</a> the need for an EPUB Maintenance
+          Working Group came to the fore.
+          As the active community behind these two groups, including the chairs and editors, is virtually identical, and
+          because there is also a major overlap of the technical content, the proposal is to create one Working Group to
+          maintain the complete palette of Recommendations in the area of Digital Publishing, instead of unnecessarily
+          duplicating the efforts.
         </p>
 
       </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-				<p>
-          The Working Group will maintain the <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>, <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a>, <a href="https://www.w3.org/TR/epub-33/">EPUB 3.3</a>, <a href="https://www.w3.org/TR/epub-rs-33/">EPUB Reading Systems 3.3</a>, and <a href="https://www.w3.org/TR/epub-a11y-11/">EPUB Accessibility 1.1</a> Recommendations, as well as related Notes, such as the <a href='https://www.w3.org/TR/lpf/'>Lightweight Packaging Format</a> or the <a href="https://www.w3.org/TR/epub-a11y-tech-11/">EPUB Accessibility Techniques 1.1</a>. For a complete list of documents see the publication list of the <a href="https://www.w3.org/groups/wg/publishing/publications">Audiobooks</a> and the <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a> Working Groups.
-				</p>
+        <p>
+          The Working Group will maintain the <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>,
+          <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a>,
+          <a href="https://www.w3.org/TR/epub-33/">EPUB 3.3</a>,
+          <a href="https://www.w3.org/TR/epub-rs-33/">EPUB Reading Systems 3.3</a>, and
+          <a href="https://www.w3.org/TR/epub-a11y-11/">EPUB Accessibility 1.1</a>
+          Recommendations, as well as related Notes, such as the
+          <a href='https://www.w3.org/TR/lpf/'>Lightweight Packaging Format</a> or the
+          <a href="https://www.w3.org/TR/epub-a11y-tech-11/">EPUB Accessibility Techniques 1.1</a>.
+          For a complete list of documents see the publication list of the
+          <a href="https://www.w3.org/groups/wg/publishing/publications">Audiobooks</a> and the
+          <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a> Working Groups.
+        </p>
 
         <p>
-          The Working Group will also maintain the <a href="https://w3c.github.io/epub-tests/">EPUB 3.3</a> and <a href="https://w3c.github.io/publ-tests/">Audiobooks</a> test suites.
+          The Working Group will also maintain the <a href="https://w3c.github.io/epub-tests/">EPUB 3.3</a> and <a
+            href="https://w3c.github.io/publ-tests/">Audiobooks</a> test suites.
         </p>
 
-				<p>
-          Note: this Working Group is a continuation of the previous <a href='https://www.w3.org/publishing/groups/publ-wg/'>Publishing</a> and <a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB</a> Working Groups, with similar scopes and reduced focus.
+        <p>
+          Note: this Working Group is a continuation of the previous
+          <a href='https://www.w3.org/publishing/groups/publ-wg/'>Publishing</a> and
+          <a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB</a> Working Groups, with similar scopes and
+          reduced focus.
         </p>
 
-				<section id="section-out-of-scope">
-					<h3 id="out-of-scope">Out of Scope</h3>
-					<p>The following features are out of scope, and will not be addressed by this Working Group.</p>
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+          <p>The following features are out of scope, and will not be addressed by this Working Group.</p>
 
           <ul>
             <li>
-              Removal of any existing features defined by EPUB 3.3. Existing features will only be deprecated if they are not needed to support existing EPUB 3 content, as stated in <a href="https://www.w3.org/TR/html-design-principles/#support-existing-content">HTML’s design principles</a>.
+              Removal of any existing features defined by EPUB 3.3.
+              Existing features will only be deprecated if they
+              are not needed to support existing EPUB 3 content, as stated in
+              <a href="https://www.w3.org/TR/html-design-principles/#support-existing-content">HTML’s design
+                principles</a>.
             </li>
 
             <li>
@@ -191,19 +226,25 @@
             </li>
 
             <li>
-              New packaging and serialization formats for audiobooks or EPUB 3 files, i.e., alternatives to the <a href="https://www.w3.org/TR/lpf/">Lightweight Packaging<a > or the <a href='https://www.w3.org/TR/epub-33/#sec-ocf'>EPUB Open Container formats</a>, respectively.
+              New packaging and serialization formats for audiobooks or EPUB 3 files, i.e., alternatives to the
+              <a href="https://www.w3.org/TR/lpf/">Lightweight Packaging<a> or the
+                  <a href='https://www.w3.org/TR/epub-33/#sec-ocf'>EPUB Open Container formats</a>, respectively.
             </li>
 
             <li>
-              Changes to the EPUB Package Document <a href='https://www.w3.org/TR/epub-33/#sec-package-elem'>version number</a>. The number will remain "3.0" to ensure reading systems do not reject EPUB 3 files.
+              Changes to the EPUB Package Document
+              <a href='https://www.w3.org/TR/epub-33/#sec-package-elem'>version number</a>.
+              The number will remain "3.0" to ensure reading systems do not reject EPUB 3 files.
             </li>
 
             <li>
-              Any new elements, attributes, properties, or values that would create a fork from open web technologies (e.g., HTML, CSS or SVG).
+              Any new elements, attributes, properties, or values that would create a fork from open web technologies
+              (e.g., HTML, CSS or SVG).
             </li>
 
             <li>
-              Any new Package Document properties or values that influence rendering inside viewports that can be deferred to more appropriate working groups.
+              Any new Package Document properties or values that influence rendering inside viewports that can be
+              deferred to more appropriate working groups.
             </li>
 
             <li>
@@ -220,8 +261,12 @@
           Deliverables
         </h2>
 
-        <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/publishing/publications">Audiobooks</a> and the <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a> publication lists.</p>
-        
+        <p>
+          Updated document status is available on the
+          <a href="https://www.w3.org/groups/wg/publishing/publications">Audiobooks</a> and the
+          <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a> publication lists.
+        </p>
+
 
         <section id="normative">
           <h3>
@@ -231,85 +276,108 @@
             The Working Group will maintain the following W3C normative specifications:
           </p>
 
-					<dl>
-						<dt><strong>Publication Manifest</strong></dt>
-						<dd>
+          <dl>
+            <dt><strong>Publication Manifest</strong></dt>
+            <dd>
               <p>
-  								Latest publication: 10 November 2020<br>
-  								Exclusion Draft: <a href="https://www.w3.org/TR/2020/REC-pub-manifest-20201110/">https://www.w3.org/TR/2020/REC-pub-manifest-20201110/</a><br>
-  								Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call for Exclusion</a> 5 December 2019, ended on 3 February 2020<br>
-  								Other Charter: <a href="https://www.w3.org/2017/04/publ-wg-charter/">https://www.w3.org/2017/04/publ-wg-charter/</a>
+                Latest publication: 10 November 2020<br>
+                Exclusion Draft: <a
+                  href="https://www.w3.org/TR/2020/REC-pub-manifest-20201110/">https://www.w3.org/TR/2020/REC-pub-manifest-20201110/</a><br>
+                Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call for
+                  Exclusion</a> 5 December 2019, ended on 3 February 2020<br>
+                Other Charter: <a
+                  href="https://www.w3.org/2017/04/publ-wg-charter/">https://www.w3.org/2017/04/publ-wg-charter/</a>
 
-              </p>  						
+              </p>
             </dd>
 
-						<dt><strong>Audiobooks</strong></dt>
-						<dd>
+            <dt><strong>Audiobooks</strong></dt>
+            <dd>
               <p>
-  								Latest publication: 10 November 2020<br>
-  								Exclusion Draft: <a href="https://www.w3.org/TR/2020/REC-audiobooks-20201110/">https://www.w3.org/TR/2020/REC-audiobooks-20201110/</a><br>
-  								Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0000.html">Call for Exclusion</a> 5 December 2019, ended on 3 February 2020<br>
-  								Other Charter: <a href="https://www.w3.org/2017/04/publ-wg-charter/">https://www.w3.org/2017/04/publ-wg-charter/</a>
+                Latest publication: 10 November 2020<br>
+                Exclusion Draft: <a
+                  href="https://www.w3.org/TR/2020/REC-audiobooks-20201110/">https://www.w3.org/TR/2020/REC-audiobooks-20201110/</a><br>
+                Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0000.html">Call for
+                  Exclusion</a> 5 December 2019, ended on 3 February 2020<br>
+                Other Charter: <a
+                  href="https://www.w3.org/2017/04/publ-wg-charter/">https://www.w3.org/2017/04/publ-wg-charter/</a>
 
-              </p>  						
+              </p>
             </dd>
 
-						<dt><strong>EPUB 3.3</strong> <i class="todo">to be updated when Rec is published</i></dt>
-						<dd>
+            <dt><strong>EPUB 3.3</strong> <i class="todo">to be updated when Rec is published</i></dt>
+            <dd>
               <p>
-  								Latest publication: 21 February 2023<br>
-  								Exclusion Draft: <a href="https://www.w3.org/TR/2023/CR-epub-33-20230221/">https://www.w3.org/TR/2023/CR-epub-33-20230221/</a><br>
-  								Associated <a class="todo" href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call for Exclusion</a> 21 February 2023, ended on 22 April 2023<br>
-  								Other Charter: <a href="https://www.w3.org/2020/12/epub3-wg-charter.html">https://www.w3.org/2020/12/epub3-wg-charter.html</a>
+                Latest publication: 21 February 2023<br>
+                Exclusion Draft: <a
+                  href="https://www.w3.org/TR/2023/CR-epub-33-20230221/">https://www.w3.org/TR/2023/CR-epub-33-20230221/</a><br>
+                Associated <a class="todo" href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call
+                  for Exclusion</a> 21 February 2023, ended on 22 April 2023<br>
+                Other Charter: <a
+                  href="https://www.w3.org/2020/12/epub3-wg-charter.html">https://www.w3.org/2020/12/epub3-wg-charter.html</a>
 
-              </p>  						
+              </p>
             </dd>
 
-						<dt><strong>EPUB Reading Systems 3.3</strong> <i class="todo">to be updated when Rec is published</i></dt>
-						<dd>
+            <dt><strong>EPUB Reading Systems 3.3</strong> <i class="todo">to be updated when Rec is published</i></dt>
+            <dd>
               <p>
-  								Latest publication: 21 February 2023<br>
-  								Exclusion Draft: <a href="https://www.w3.org/TR/2023/CR-epub-rs-33-20230221/">https://www.w3.org/TR/2023/CR-epub-rs-33-20230221/</a><br>
-  								Associated <a class="todo" href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call for Exclusion</a> 21 February 2023, ended on 22 April 2023<br>
-  								Other Charter: <a href="https://www.w3.org/2020/12/epub3-wg-charter.html">https://www.w3.org/2020/12/epub3-wg-charter.html</a>
+                Latest publication: 21 February 2023<br>
+                Exclusion Draft: <a
+                  href="https://www.w3.org/TR/2023/CR-epub-rs-33-20230221/">https://www.w3.org/TR/2023/CR-epub-rs-33-20230221/</a><br>
+                Associated <a class="todo" href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call
+                  for Exclusion</a> 21 February 2023, ended on 22 April 2023<br>
+                Other Charter: <a
+                  href="https://www.w3.org/2020/12/epub3-wg-charter.html">https://www.w3.org/2020/12/epub3-wg-charter.html</a>
 
-              </p>  						
+              </p>
             </dd>
 
-						<dt><strong>EPUB Accessibility 1.1</strong> <i class="todo">to be updated when Rec is published</i></dt>
-						<dd>
+            <dt><strong>EPUB Accessibility 1.1</strong> <i class="todo">to be updated when Rec is published</i></dt>
+            <dd>
               <p>
-  								Latest publication: 21 February 2023<br>
-  								Exclusion Draft: <a href="https://www.w3.org/TR/2023/CR-epub-a11y-11-20230221/">https://www.w3.org/TR/2023/CR-epub-a11y-11-20230221/</a><br>
-  								Associated <a class="todo" href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call for Exclusion</a> 21 February 2023, ended on 22 April 2023<br>
-  								Other Charter: <a href="https://www.w3.org/2020/12/epub3-wg-charter.html">https://www.w3.org/2020/12/epub3-wg-charter.html</a>
+                Latest publication: 21 February 2023<br>
+                Exclusion Draft: <a
+                  href="https://www.w3.org/TR/2023/CR-epub-a11y-11-20230221/">https://www.w3.org/TR/2023/CR-epub-a11y-11-20230221/</a><br>
+                Associated <a class="todo" href="https://lists.w3.org/Archives/Member/member-cfe/2019Dec/0001.html">Call
+                  for Exclusion</a> 21 February 2023, ended on 22 April 2023<br>
+                Other Charter: <a
+                  href="https://www.w3.org/2020/12/epub3-wg-charter.html">https://www.w3.org/2020/12/epub3-wg-charter.html</a>
 
-              </p>  						
+              </p>
             </dd>
-					</dl>
+          </dl>
         </section>
 
         <section id="ig-other-deliverables">
           <h3>
             Other Deliverables
           </h3>
+
           <p>
-						Other non-normative documents may be created and/or maintained such as:
-					</p>
-					<ul>
-						<li>
+            Other non-normative documents may be created and/or maintained such as:
+          </p>
+
+          <ul>
+            <li>
               <p><a href='https://www.w3.org/TR/lpf/'>Lightweight Packaging Format</a> (Working Group Note).</p>
             </li>
+
             <li>
-              <p><a href="https://www.w3.org/TR/epub-a11y-tech-11/">EPUB Accessibility Techniques 1.1</a> (Working Group Note).</p>
+              <p><a href="https://www.w3.org/TR/epub-a11y-tech-11/">EPUB Accessibility Techniques 1.1</a> (Working Group
+                Note).</p>
             </li>
-						<li>
-              <p><a href="https://w3c.github.io/publ-tests/">Test suites and implementation reports for the Audiobooks and the Publication Manifest specifications</a>.</p>
+
+            <li>
+              <p><a href="https://w3c.github.io/publ-tests/">Test suites and implementation reports for the Audiobooks
+                  and the Publication Manifest specifications</a>.</p>
             </li>
-						<li>
-              <p><a href="https://w3c.github.io/epub-tests/">Test suites and implementation reports for the EPUB specifications</a>.</p>
+
+            <li>
+              <p><a href="https://w3c.github.io/epub-tests/">Test suites and implementation reports for the EPUB
+                  specifications</a>.</p>
             </li>
-					</ul>
+          </ul>
         </section>
       </section>
 
@@ -317,133 +385,191 @@
         <h2>Success Criteria</h2>
 
         <p>
-          In order to update the Recommendation, each substantive change is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites.
+          In order to update the Recommendation, each substantive change is expected to have
+          <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent
+            implementations</a> of every feature defined in the specification, where interoperability can be verified by
+          passing open test suites.
         </p>
 
         <p>
-          Each substantive change should contain a section detailing all known <a href="https://www.w3.org/TR/pub-manifest/#security-privacy">security</a> and <a href="https://www.w3.org/TR/pub-manifest/#security-privacy">privacy</a> implications for implementers, authors, and end users. 
+          Each substantive change should contain a section detailing all known
+          <a href="https://www.w3.org/TR/pub-manifest/#security-privacy">security</a> and
+          <a href="https://www.w3.org/TR/pub-manifest/#security-privacy">privacy</a> implications for implementers,
+          authors, and end users.
         </p>
 
         <p>
-          To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.
+          To promote interoperability, all changes made to specifications should have
+          <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.
         </p>
 
         <p>
-          This Working Group expects to follow the TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
+          This Working Group expects to follow the TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform
+            Design Principles</a>.
         </p>
       </section>
 
       <section id="coordination">
         <h2>Coordination</h2>
 
-				<p>
-					This group is expected to coordinate with the <a href='https://www.w3.org/community/publishingcg/'>Publishing Community Group</a> on consensus-based proposals related to content changes for the Audiobooks Working Group Deliverables. The Chairs of this group should reject proposals that are incompatible with this Charter. 
-				</p>
-
         <p>
-          For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for accessibility, internationalization, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> (if applicable).  The Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each specification.  The Working Group is advised to seek a review at least 3 months before first entering <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a review.
+          This group is expected to coordinate with the <a href='https://www.w3.org/community/publishingcg/'>Publishing
+            Community Group</a> on consensus-based proposals related to content changes for the Audiobooks Working Group
+          Deliverables.
+          The Chairs of this group should reject proposals that are incompatible with this Charter.
         </p>
 
         <p>
-          Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:
+          For all specifications, this Working Group will seek <a
+            href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, privacy, and security with the relevant Working and Interest Groups, and
+          with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including <a
+            href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> (if
+          applicable).
+          The Working Group is encouraged to engage collaboratively with the horizontal review groups
+          throughout development of each specification.
+          The Working Group is advised to seek a review at least 3 months before first entering <a
+            href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is
+          encouraged to proactively notify the horizontal review groups when major changes occur in a specification
+          following a review.
+        </p>
+
+        <p>
+          Additional technical coordination with the following Groups will be made, per the <a
+            href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:
         </p>
 
 
         <section>
-					<h3 id="w3c-coordination">W3C Groups</h3>
+          <h3 id="w3c-coordination">W3C Groups</h3>
 
-					<dl>
-						<dt><a href="https://www.w3.org/community/publishingbg/">Publishing Business Group</a></dt>
-						<dd>
-							<p>
-								The Publishing Business Group will provide business cases and guidance to the working group as needed. The PBG will also provide support for industry outreach.
-							</p>
-						</dd>
+          <dl>
+            <dt><a href="https://www.w3.org/community/publishingbg/">Publishing Business Group</a></dt>
 
-						<dt><a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a></dt>
-						<dd>
-							<p>
-								The Accessibility Guidelines Working Group develops guidelines to make Web content accessible for people with disabilities, and is responsible for the development and maintenance of the WCAG series of Recommendations. The EPUB Accessibility specification is already based on WCAG, and a liaison will be set up to ensure that any new features in EPUB 3.3, in particular EPUB Accessibility 1.1, would continue to refer to WCAG 2.X, when applicable.
-							</p>
-						</dd>
-						<dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
-						<dd>
-							<p>
-								The APA WG provides horizontal review of potential accessibility issues in the architecture, including knowledge domains for STEM accessibility; as well as accessibility impact of a specification.
-							</p>
-						</dd>
-						<dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
-						<dd>
-							<p>
-								The ARIA Working Group is responsible for the development of ARIA and the development of DPUB-ARIA Module 1.1. The EPUB 3 Working Group will support the ARIA Working Group’s work to maintain this specification.
-							</p>
-						</dd>
+            <dd>
+              <p>
+                The Publishing Business Group will provide business cases and guidance to the working group as needed.
+                The PBG will also provide support for industry outreach.
+              </p>
+            </dd>
 
-						<dt><a href="https://www.w3.org/community/sync-media-pub/">Synchronized Multimedia for Publications Community Group</a></dt>
-						<dd>
+            <dt><a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a></dt>
+
+            <dd>
+              <p>
+                The Accessibility Guidelines Working Group develops guidelines to make Web content accessible for people
+                with disabilities, and is responsible for the development and maintenance of the WCAG series of
+                Recommendations.
+                The EPUB Accessibility specification is already based on WCAG, and a liaison will be
+                set up to ensure that any new features in EPUB 3.3, in particular EPUB Accessibility 1.1, would continue
+                to refer to WCAG 2.X, when applicable.
+              </p>
+            </dd>
+            <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
+
+            <dd>
+              <p>
+                The APA WG provides horizontal review of potential accessibility issues in the architecture, including
+                knowledge domains for STEM accessibility; as well as accessibility impact of a specification.
+              </p>
+            </dd>
+            <dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
+            <dd>
+              <p>
+                The ARIA Working Group is responsible for the development of ARIA and the development of DPUB-ARIA
+                Module 1.1.
+                The EPUB 3 Working Group will support the ARIA Working Group’s work to maintain this
+                specification.
+              </p>
+            </dd>
+
+            <dt><a href="https://www.w3.org/community/sync-media-pub/">Synchronized Multimedia for Publications
+                Community Group</a></dt>
+            <dd>
               <p>
                 Coordination on new synchronized multimedia features and on way they would interoperate with audiobooks.
               </p>
             </dd>
-			
-						<dt><a href="https://www.w3.org/community/bdcomacg/">BD Comics Manga Community Group</a></dt>
-						<dd>
+
+            <dt><a href="https://www.w3.org/community/bdcomacg/">BD Comics Manga Community Group</a></dt>
+            <dd>
               <p>
-                Coordination on various on the definition of a different Publication Manifest profile for that particular area of publishing.
+                Coordination on various on the definition of a different Publication Manifest profile for that
+                particular area of publishing.
               </p>
             </dd>
 
-						<dt><a href="https://www.w3.org/community/schemaorg/">Schema.org Community Group</a></dt>
-						<dd>
+            <dt><a href="https://www.w3.org/community/schemaorg/">Schema.org Community Group</a></dt>
+            <dd>
               <p>Synchronization on the schema.org terms used in the Publication Manifest.</p>
             </dd>
-					</dl>
+          </dl>
         </section>
 
-				<section>
-					<h3 id="external-coordination">External Organizations</h3>
-					<dl>
-						<dt><a href="http://readium.org/">Readium Foundation</a></dt>
-						<dd>
-							<p>
-								The Readium projects (Readium Mobile, Readium Desktop, and Readium Web) are at the core of a number of EPUB 3 reading systems around the world, and they also implement the Audiobook specification. As such, the feedback of that development will be essential to the maintenance work of these specifications.
-							</p>
-						</dd>
-						<dt><a href="https://www.edrlab.org/">EDRLab</a></dt>
-						<dd>
-							<p>
-								EDRLab is actively working on the different Readium projects and develops an open-source and highly accessible desktop reading application. They are implementers of EPUB 3 as well as Audiobooks.
-							</p>
-						</dd>
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href="http://readium.org/">Readium Foundation</a></dt>
+            <dd>
+              <p>
+                The Readium projects (Readium Mobile, Readium Desktop, and Readium Web) are at the core of a number of
+                EPUB 3 reading systems around the world, and they also implement the Audiobook specification.
+                As such, the feedback of that development will be essential to the maintenance work of these
+                specifications.
+              </p>
+            </dd>
+            <dt><a href="https://www.edrlab.org/">EDRLab</a></dt>
+            <dd>
+              <p>
+                EDRLab is actively working on the different Readium projects and develops an open-source and highly
+                accessible desktop reading application.
+                They are implementers of EPUB 3 as well as Audiobooks.
+              </p>
+            </dd>
 
-						<dt><a href="https://daisy.org/">DAISY Consortium</a></dt>
-						<dd>
-							<p>
-								The DAISY consortium currently manages <a href="http://epubtest.org/">epubtest.org</a>,
-								the support grid for EPUB. They also provide support on specification writing, accessibility,
-								and feedback on EPUB implementation. Their feedback on the further development of EPUB in general, and EPUB Accessibility in particular, will be essential.
-							</p>
-						</dd>
+            <dt><a href="https://daisy.org/">DAISY Consortium</a></dt>
+            <dd>
+              <p>
+                The DAISY consortium currently manages <a href="http://epubtest.org/">epubtest.org</a>,
+                the support grid for EPUB. They also provide support on specification writing, accessibility,
+                and feedback on EPUB implementation.
+                Their feedback on the further development of EPUB in general, and EPUB Accessibility in particular, will
+                be essential.
+              </p>
+            </dd>
 
-						<dt><a href="https://github.com/w3c/epubcheck">EPUBCheck</a> Community</dt>
-						<dd>
-							<p>
-								<a href="https://github.com/w3c/epubcheck">EPUBCheck</a>, the EPUB validation tool, is an open source software, currently maintained by the <a href="http://www.daisy.org/">DAISY Consortium</a> on behalf of the W3C, and widely used by virtually all major publishers around the World. The EPUB 3 Working Group has worked closely with the developers of EPUBCheck, and the continuing cooperation on the maintenance of both EPUBCheck and the EPUB specification is essential.
-							</p>
-						</dd>
+            <dt><a href="https://github.com/w3c/epubcheck">EPUBCheck</a> Community</dt>
+            <dd>
+              <p>
+                <a href="https://github.com/w3c/epubcheck">EPUBCheck</a>, the EPUB validation tool, is an open source
+                software, currently maintained by the <a href="http://www.daisy.org/">DAISY Consortium</a> on behalf of
+                the W3C, and widely used by virtually all major publishers around the World.
+                The EPUB 3 Working Group has worked closely with the developers of EPUBCheck, and the continuing
+                cooperation on the maintenance of both EPUBCheck and the EPUB specification is essential.
+              </p>
+            </dd>
 
-						<dt><a href="https://www.iso.org">International Standards Organization (ISO)</a></dt>
-						<dd>
-							<p>
-								An earlier version of EPUB (<a href="http://idpf.org/epub/301">EPUB 3.0.1</a>) was published as an ISO standard ISO/IEC TS 30135:2014 (parts 1-7). This Working Group and ISO may consider updating that ISO specification once the new Recommendations are published.
-							</p>
-							<p>
-								Additionally, there are currently activities within <a href="https://isotc.iso.org/livelink/livelink?func=ll&objId=8913149&objAction=browse&sort=name">ISO/IEC JTC 001/SC34</a> on specifications that rely on earlier versions of EPUB (e.g., EPUB Preservation, EPUB Accessibility). A liaison has to be maintained on, possibly, updating those ISO specifications to the latest versions of EPUB 3, maintained by this Working Group.
-							</p>
-						</dd>
-					</dl>
-				</section>
-			</section>
+            <dt><a href="https://www.iso.org">International Standards Organization (ISO)</a></dt>
+            <dd>
+              <p>
+                An earlier version of EPUB (<a href="http://idpf.org/epub/301">EPUB 3.0.1</a>) was published as an ISO
+                standard ISO/IEC TS 30135:2014 (parts 1-7).
+                This Working Group and ISO may consider updating that ISO specification once the new Recommendations are
+                published.
+              </p>
+              <p>
+                Additionally, there are currently activities within <a
+                  href="https://isotc.iso.org/livelink/livelink?func=ll&objId=8913149&objAction=browse&sort=name">ISO/IEC
+                  JTC 001/SC34</a> on specifications that rely on earlier versions of EPUB (e.g., EPUB Preservation,
+                EPUB Accessibility).
+                A liaison has to be maintained on, possibly, updating those ISO specifications to the latest versions of
+                EPUB 3, maintained by this Working Group.
+              </p>
+            </dd>
+          </dl>
+        </section>
+      </section>
 
 
       <section class="participation">
@@ -451,15 +577,22 @@
           Participation
         </h2>
         <p>
-          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute towards the Working Group as needed. There is no minimum requirement for other Participants.
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration,
+          including representatives from the key implementors of this specification, and active Editors and Test Leads
+          for each specification.
+          The Chairs, specification Editors, and Test Leads are expected to contribute towards the Working Group as
+          needed. There is no minimum requirement for other Participants.
         </p>
         <p>
-          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as
+          described in <a href='#communication'>Communication</a>.
         </p>
         <p>
-          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement
+          to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
         </p>
-        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+        <p>Participants in the group are required (by the <a
+            href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
           W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
       </section>
 
@@ -470,22 +603,34 @@
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
-        The meetings themselves are not open to public participation, however.
+          Technical discussions for this Working Group are conducted in <a
+            href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from
+          teleconference and face-to-face meetings will be archived for public review, and technical discussions and
+          issue tracking will be conducted in a manner that can be both read and written to by the general public.
+          Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit
+          direct public contribution requests.
+          The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/groups/wg/pmwg/">Publication Maintenance Working Group home page<a >.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and
+          meetings) will be available from the <a href="https://www.w3.org/groups/wg/pmwg/">Publication Maintenance
+            Working Group home page</a>.
         </p>
         <p>
-          Most Publication Maintenance Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+          Most Publication Maintenance Working Group teleconferences will focus on discussion of particular
+          specifications, and will be conducted on an as-needed basis.
         </p>
 
-				<p>
-					This group primarily conducts its technical work on <a id="public-github" href="https://github.com/search?q=topic%3Apmwg-wg+org%3Aw3c&type=Repositories">GitHub issues</a>. The public is invited to review, discuss and contribute to this work.
-				</p>
+        <p>
+          This group primarily conducts its technical work on <a id="public-github"
+            href="https://github.com/search?q=topic%3Apmwg-wg+org%3Aw3c&type=Repositories">GitHub issues</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
 
         <p>
-          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the
+          Chairs and members of the group, for member-only discussions in special cases when a participant requests such
+          a discussion.
         </p>
       </section>
 
@@ -496,21 +641,34 @@
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
-        <p>
-           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+          This group will seek to make decisions through consensus and due process, per the
+          <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1,
+            Consensus)</a>.
+          Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with
+          members of the group and other reviewers, and consensus emerges with little formal voting being required.
         </p>
         <p>
-          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
-
-          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from from 5 to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
-          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+          However, if a decision is necessary for timely progress and consensus is not achieved after careful
+          consideration of the range of views presented, the Chairs may call for a group vote and record a decision
+          along with any objections.
         </p>
         <p>
-          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication
+          decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or
+          web-based survey), with a response period from from 5 to 10 working days, depending on the chair's evaluation
+          of the group consensus on the issue.
+          If no objections are raised by the end of the response period, the resolution will be considered to have
+          consensus as a resolution of the Working Group.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+          All decisions made by the group should be considered resolved unless and until new information becomes
+          available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C
+            Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the
+          Process Document requires.
         </p>
       </section>
 
@@ -519,15 +677,19 @@
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
-
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/pmwg/ipr">licensing information</a>.
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
+            Policy</a> (Version of 15 September 2020).
+          To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be
+          implemented, according to this policy, on a Royalty-Free basis.
+          For more information about disclosure obligations for this group, please see the <a
+            href="https://www.w3.org/groups/wg/pmwg/ipr">licensing information</a>.
         </p>
       </section>
 
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software
+            and Document license</a> for all its deliverables.</p>
       </section>
 
 
@@ -537,7 +699,10 @@
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section
+            3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>.
+          In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C
+          Process shall take precedence.
         </p>
 
         <section id="history">
@@ -546,7 +711,9 @@
           </h3>
           <!-- <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p> -->
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a
+              href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory
+              Committee Review of a Charter)</a>:</p>
 
           <table class="history">
             <tbody>
@@ -632,13 +799,16 @@
         <a href="mailto:ivan@w3.org">Ivan Herman</a>
       </address>
 
-<p class="copyright">Copyright © 2023 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
-  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
-  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
-      <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+      <p class="copyright">Copyright © 2023 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+        <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+        <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+          title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+      </p>
       <hr>
       <p><a href="https://github.com/w3c/pmwg-charter">Yes, it's on GitHub!</a>.</p>
     </footer>
   </body>
+
 </html>
