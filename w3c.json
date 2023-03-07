@@ -1,0 +1,6 @@
+{
+    "group":     ["wg/epub","wg/publ"],
+    "contacts":  ["iherman"],
+    "repo-type": "process",
+    "policy":    "open"
+}
