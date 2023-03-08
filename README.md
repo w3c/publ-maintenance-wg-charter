@@ -1,3 +1,9 @@
-# Initial version of the Publication Maintenance WG charter
+# Development of the Publication Maintenance WG charter
 
-This repo is just for a first round of discussion among potential chairs, interested parties who will probably participate. Once we get to some agreement, this repository will move to W3C space, where it will get a larger visibility and will be submitted to the strategy team for the usual chartering process.
+Development steps are:
+
+1. discussion among potential chairs
+2. initial review with the publishing steering committee and the relevant Working Groups (i.e., audiobooks and epub)
+3. ubmitted to the W3C strategy team for the usual chartering process.
+
+We are currently heading to (2).
