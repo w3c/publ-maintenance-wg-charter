@@ -1,5 +1,5 @@
 {
-    "group":     ["wg/epub","wg/publ"],
+    "group":     ["wg/pm"],
     "contacts":  ["iherman"],
     "repo-type": "process",
     "policy":    "open"
