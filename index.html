@@ -208,10 +208,7 @@
                         but may also restrict the usage of others.
                         See the <a href="https://github.com/readium/annotations">documentation</a> of
                         the Readium specification on Annotations and its experimental implementation in EDRLab's Thorium Reader.
-                        <span class="issue">
-                            I would expect that annotations have special A11y aspects. 
-                            Do we want to mention that here, or does it go without saying?
-                        </span>
+                        
                     </li>
                     <li>
                         Based on the analysis of current use and deployment, review and possibly update the
@@ -220,17 +217,17 @@
                         See the <a href="https://www.w3.org/2024/10/Manga_tpac_breakout.pdf">breakout presentation at TPAC 2024</a>.
                     </li>
                     <li>
-                        Introduce the usage of Web Assembly (<code>.wasm</code>) content in EPUB (e.g., as core media types),
-                        which may lead to changes on the usage of scripts in EPUB content in general.
+                        Explicitly define the relationship between the <code>&lt;script&gt;</code> element (including resources used by the referenced scripts) and exempt resources, for example in view of the inclusion of Web Assembly (<code>.wasm</code>) content in EPUB. See (postponed) 
+                        <a href="https://github.com/w3c/epub-specs/pull/2655">EPUB Issue</a> for further details.
                     </li>
                     <li class="issue">
                         Are there any evolution in A11y that we want to put here?
                     </li>
                 </ul>
 
-                <p class="issue">It is unclear to me at this point whether we want to go through classical
+                <!-- <p class="issue">It is unclear to me at this point whether we want to go through classical
                      FPWD->WF->CR->PR->Rec route or whether we settle everything via the Candidate Correction/Addition route of the process. It may depend on the specific feature. Something ought to be here in the scope I guess.
-                </p>
+                </p> -->
                 
                 <p>
                     The Working Group will also incubate other issues without necessarily aiming at the creation of final
@@ -247,15 +244,14 @@
                 </ul>
                 
                 <p>
-                    The Working Group may produce an updated version of EPUB 3, which is referred to as “EPUB 3.X”
-                    in this document. Depending on the type of changes this could be either EPUB 3.4 or EPUB 3.3.1.
-                    It is a primary goal of the new EPUB version to remain backward compatible with EPUB 3.3
-                    (i.e., existing conformant EPUB 3.3 would remain conformant EPUB 3.X documents).
+                    The Working Group may produce an updated version of EPUB 3, which is referred to as “EPUB 3.4”
+                    in this document. It is a primary goal of the new EPUB version to remain backward compatible with EPUB 3.3
+                    (i.e., existing conformant EPUB 3.3 would remain conformant EPUB 3.4 documents).
                 </p>
                 
                 <p>
-                    Depending on community discussions and demands, this Working Group may also decide to submit the EPUB 3.X,
-                    the EPUB Reading Systems 3.X, and the EPUB Accessibility 1.X specifications to
+                    Depending on community discussions and demands, this Working Group may also decide to submit the EPUB 3.4,
+                    the EPUB Reading Systems 3.4, and the EPUB Accessibility 1.x specifications to
                     <a href="https://www.iso.org/committee/45020.html">ISO/IEC JTC1</a> to be published as ISO/IEC standards.
                     If the decision is to proceed with a submission, this would follow
                     the <a href="https://www.w3.org/2010/03/w3c-pas-submission.html">PAS Submission process</a>.
@@ -282,7 +278,7 @@
                 
                     <ul class="out-of-scope">
                         <li>
-                            Removal of any existing features defined by EPUB 3.X.
+                            Removal of any existing features defined by EPUB 3.
                             Existing features will only be deprecated if they are not needed to support existing EPUB 3
                             content, as stated in
                             <a href="https://www.w3.org/TR/html-design-principles/#support-existing-content">HTML’s design
@@ -548,12 +544,10 @@
                 
                 <section id="timeline">
                     <h3>Timeline</h3>
-                    <p class="issue">This may need further thoughts.</p>
                     <ul>
                         <li>TBD + 1 week: First teleconference</li>
-                        <li>TBD + 6 months: First drafts (FPWD and/or Candidate Additions) for in-scope changes</li>
-                        <li>TBD + 18 months: CR for a new version (if applicable)</li>
-                        <li>TBD + 18 months: Final CR Snapshot (if applicable)</li>
+                        <li>TBD + 6 months: FPWD for in-scope changes</li>
+                        <li>TBD + 12 months: First CR snapshot for a new version</li>
                         <li>TBD + 24: EPUB 3.X final version</li>
                     </ul>
                 </section>
