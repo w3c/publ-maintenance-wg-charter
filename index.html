@@ -79,10 +79,13 @@
             <!-- delete PROPOSED after AC review completed -->
 
             <p class="mission">
-                The <strong>mission</strong> of the Publishing Maintenance Working Group is to maintain the W3C Recommendations 
-            	and related Notes in the area of Digital Publishing. These documents were published originally by the <a
-                href="https://www.w3.org/publishing/groups/publ-wg/">Audiobooks</a> and the <a
-                href="https://www.w3.org/publishing/groups/epub-wg/">EPUB</a> Working Groups.
+
+                The <strong>mission</strong> of the Publishing Maintenance Working Group is to maintain the Recommendations
+                developed by the <a href="https://www.w3.org/publishing/groups/publ-wg/">Audiobooks</a> and the
+                <a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB</a> Working Groups, and work on new
+                features and ideas to incrementally improve these Recommendations, provide stable
+                satellite specifications in the form of Working Group Notes, or provide the base for building the next
+                major revisions of the publishing specifications.
             </p>
 
             <div class="noprint">
@@ -162,41 +165,31 @@
                     <a href="https://www.w3.org/2023/06/pmwg-charter.html">previous charter</a>) 
                     has maintained the specifications originally published by the 
                     <a href="https://www.w3.org/publishing/groups/publ-wg/">Audiobooks Working Group</a> 
-                    and the <a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB Working Group</a>. 
-                    During that time, comments and issues, as well as industry demands, came to the foreground that the Working Group
-                    was not chartered to handle. This charter extends the previous charter by adding these items to its scope. 
-                    The Working Group will also continue to maintain the complete roster of Recommendations and Notes 
-                    of the Digital Publishing activity.
-                    
+                    and the <a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB Working Group</a>.
+                    During that time new features and demands were put forward by the publishing community that the
+                    Working Group was not chartered to answer.
+                    This charter extends the previous charter by adding features to incrementally improve
+                    these Recommendations based on industry demands, provide stable satellite specifications in the
+                    form of Working Group Notes, or to provide the base for building the next major revisions of the
+                    publishing specifications.
                 </p>
             </div>
 
             <section id="scope" class="scope">
                 <h2>Scope</h2>
                 <p>
-                    The Working Group continues to maintain the
-                    <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a> and
-                    <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a> Recommendations, as well as 
-                	related Notes such as the
-                    <a href="https://www.w3.org/TR/lpf/">Lightweight Packaging Format</a>.
-                    For these specifications, <a href="https://www.w3.org/policies/process/class-4">class 4</a> changes are allowed.
-                </p>
-                <p>
-                    The Working Group also plans to work on new technical features for the
+                    The Working Group plans to work on new technical features for the
                     <a href="https://www.w3.org/TR/epub-33/">EPUB 3.3</a>,
                     <a href="https://www.w3.org/TR/epub-rs-33/">EPUB Reading Systems 3.3</a>,
-                    and <a href="https://www.w3.org/TR/epub-a11y-11/">EPUB Accessibility 1.1</a> Recommendations
-                    These may lead to new versions of the Recommendations.
+                    and <a href="https://www.w3.org/TR/epub-a11y-11/">EPUB Accessibility 1.1</a> Recommendations,
+                    answering the needs of the publishing community and based on previous incubation work. These are:
                 </p>
-                
-                <p>The following issues will be addressed by the Working Group:</p>
-                
+
                 <ul>
                     <li>
                         Define a standard way to publish Continuously Scrolled Comics (a.k.a. Webtoons) in EPUB.
                         See the <a href="https://github.com/w3c/pm-wg/wiki/Continuously-Scrolled-Comics-(a.k.a.-Webtoons)-in-EPUB">wiki
-                            page on the group's repository</a>
-                        for further details and references.
+                        page on the group's repository</a> for a background, and for further details and references.
                     </li>
                 
                     <li>
@@ -204,13 +197,26 @@
                         Annotation <a href="https://www.w3.org/TR/annotation-model/">Data Model</a> and
                         <a href="https://www.w3.org/TR/annotation-vocab/">Vocabulary</a>, aiming at
                         interchangeable annotations.
-                        <!-- This may lead to the definition of new, EPUB specific, vocabulary elements as well as new selectors,
-                        but may also restrict the usage of others. -->
-                        Standard annotation selectors can also be used as standard locators for location-based features such as bookmarks and
-                        citations.
+                        Standard annotation selectors can also be used as standard locators for location-based features
+                        such as bookmarks and citations.
+                        These features would be particularly important for educational and STEM publishing.
                         See the <a href="https://github.com/readium/annotations">documentation</a> of
-                        the Readium specification on Annotations and its experimental implementation in EDRLab's Thorium Reader that can be used as a starting point.
-                     </li>
+                        the Readium specification on Annotations and its experimental implementation in EDRLab's
+                        Thorium Reader that can be used as a starting point.
+                    </li>
+
+                    <li>
+                        Work with the Publishing CG's <a href="https://github.com/w3c/publ-a11y/">accessibility
+                        task force</a> to incorporate incubated features.
+                    </li>
+                </ul>
+
+                <p>
+                    Furthermore, the Working Group will also work on features which, though mostly maintenance in
+                    nature, involve adding new features to the Recommendations. These are as follows:
+                </p>
+
+                <ul>
                     <li>
                         Based on the analysis of current use and deployment, review and possibly update the
                         specification of the fixed-layout properties addressing spreads
@@ -218,36 +224,33 @@
                         See the <a href="https://www.w3.org/2024/10/Manga_tpac_breakout.pdf">breakout presentation at TPAC 2024</a>.
                     </li>
                     <li>
-                        Explicitly define the relationship between the <code>&lt;script&gt;</code> element (including resources used by the referenced scripts) and exempt resources, for example in view of the inclusion of Web Assembly (<code>.wasm</code>) content in EPUB. See (postponed) 
+                        Explicitly define the relationship between the <code>&lt;script&gt;</code> element
+                        (including resources used by the referenced scripts) and exempt resources, for example in
+                        view of the inclusion of Web Assembly (<code>.wasm</code>) content in EPUB. See the (postponed)
                         <a href="https://github.com/w3c/epub-specs/pull/2655">EPUB Pull Request</a> for further details.
-                    </li>
-                    <li>
-                        Work with the Publishing CG's <a href="https://github.com/w3c/publ-a11y/">accessibility task force</a> to incorporate incubated features.
                     </li>
                 </ul>
 
-                <!-- <p class="issue">It is unclear to me at this point whether we want to go through classical
-                     FPWD->WF->CR->PR->Rec route or whether we settle everything via the Candidate Correction/Addition route of the process. It may depend on the specific feature. Something ought to be here in the scope I guess.
-                </p> -->
-                
                 <p>
-                    The Working Group will also incubate other issues without necessarily aiming at the creation of final
-                    Recommendations during the lifetime of this charter. These include:
+                    Finally, the Working Group will also incubate issues without necessarily aiming at the creation of final
+                    Recommendations during the lifetime of this charter.
+                    The results may be incorporated in future versions of the EPUB specifications.
+                    These include:
                 </p>
                 
                 <ul>
                     <li>Allow non-XML HTML as content document in EPUB.</li>
-                    <li>Address the general accessibility issues of fixed layout content, with a particular focus on areas where the content cannot currently meet WCAG requirements.
-                        <!-- <span class="issue">I am a bit bothered by the fact that this might mean to issue
-                            a new version of EPUB containing Webtoons, but without the A11y aspects...
-                        </span> -->
+                    <li>
+                        Address the general accessibility issues of fixed layout content, with a particular focus on
+                        areas where the content cannot currently meet WCAG requirements.
                     </li>
                 </ul>
                 
                 <p>
-                    The Working Group will produce an updated version of EPUB 3, which is referred to as “EPUB 3.4”
-                    in this document. It is a primary goal of the new EPUB version to remain backward compatible with EPUB 3.3
-                    (i.e., existing conformant EPUB 3.3 would remain conformant EPUB 3.4 documents).
+                    As a result of this work, the Working Group will produce an updated version of EPUB 3,
+                    referred to as “EPUB 3.4” in this document. It is a primary goal of the new EPUB version to
+                    remain backward compatible with EPUB 3.3 (i.e., existing conformant EPUB 3.3 would remain
+                    conformant EPUB 3.4 documents).
                 </p>
                 
                 <p>
@@ -264,7 +267,16 @@
                     <a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html">JTC1 freely available standards</a>.
                     The submission would only permit minor editorial changes on the versions of the specifications submitted to ISO.
                 </p>
-                
+
+                <p>
+                    The Working Group also continues to maintain the
+                    <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a> and
+                    <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a> Recommendations, as well as
+                    related Notes such as the
+                    <a href="https://www.w3.org/TR/lpf/">Lightweight Packaging Format</a>.
+                    For these specifications, <a href="https://www.w3.org/policies/process/class-4">class 4</a> changes are allowed.
+                </p>
+
                 <p>
                     For a complete list of documents maintained by this Working Group,
                     see the <a href="https://www.w3.org/groups/wg/pm/publications">publication list</a> of the Group,
@@ -311,7 +323,7 @@
                 
                         <li>
                             Any new Package Document properties or values that influence rendering inside viewports that can
-                            be deferred to more appropriate working groups.
+                            be deferred to more appropriate Working Groups.
                         </li>
                 
                         <li>
