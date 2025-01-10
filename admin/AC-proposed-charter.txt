@@ -1,0 +1,56 @@
+Title: VOTE by 2025-01-31/02-1: Proposed Recharter for the Publishing Maintenance Working Group
+
+Dear Advisory Committee Representative,
+[This announcement will be forwarded to W3C group chairs]
+
+This is a Call for Review of a proposed recharter for the CSS Working Group:
+   https://www.w3.org/2024/12/Proposed-PM-charter.html
+
+Please review the charter and indicate your support using this online form:
+   https://www.w3.org/2002/09/wbs/33280/pmwg-recharter/
+
+The deadline for responses is 04:59 UTC on 1 February 2025 (23:59,
+Boston time on 31 January) [1].
+
+The mission of the Publishing Maintenance Working Group is to maintain the Recommendations
+developed by the Audiobooks and the EPUB Working Groups. This charter extends the previous charter by
+adding features to incrementally improve these Recommendations based on industry demands, provide stable
+satellite specifications in the form of Working Group Notes, or to provide the base for building
+the next major revisions of the publishing specifications. As a result of this work, the Working Group
+will produce an updated version of EPUB 3, referred to as "EPUB 3.4". It is a primary goal of the new
+EPUB version to remain backward compatible with EPUB 3.3 (i.e., existing conformant EPUB 3.3 would
+remain conformant EPUB 3.4 documents).
+
+The proposed team resource for the group is increased from 0.1 to 0.2 FTE.
+
+The Advisory Committee Representatives of current participants will need
+to have their organizations re-join the group if the revised charter
+gets approved.
+
+To see all changes relative to the current charter, follow this link:
+hhttps://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2023%2F06%2Fpmwg-charter.html&doc2=https%3A%2F%2Fwww.w3.org%2F2024%2F12%2FProposed-PM-charter.html
+
+The horizontal review of the charter is available as a Strategy GitHub
+repository issue:
+   https://github.com/w3c/strategy/issues/481
+
+More information about the group can be found on its home page [2],
+including information about group Chairs, Team Contact, and instructions
+for joining the group.
+
+If you have any questions or need further information, please contact
+Ivan Herman, Team Contact for PM Working Group, at ivan@w3.org.
+
+This charter review and extension follow sections 4.3 of the W3C
+Process Document:
+   https://www.w3.org/2023/Process-20231103/#CharterReview
+
+Thank you,
+
+For Philippe le Hégaret, W3C Strategy and Project Lead,
+Ivan Herman, Publishing Maintenance Working Group Team Contact;
+Xueyuan Jia, W3C Marketing & Communications
+
+[1]
+https://www.timeanddate.com/worldclock/fixedtime.html?iso=20250131T2359&p1=43
+[2] https://www.w3.org/groups/wg/pm/

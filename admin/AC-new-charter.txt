@@ -1,0 +1,59 @@
+Dear Advisory Committee Representative,
+[This announcement will be forwarded to W3C group Chairs]
+
+W3C is pleased to announce the re-charter of the Verifiable Credentials Working Group:
+    https://www.w3.org/2025/02/pm-wg-charter.html
+
+The group is chartered through 1 February 2027.
+
+TThe mission of the Publishing Maintenance Working is to maintain the W3C Recommendations, as well as related
+Notes, in the area of Digital Publishing published by the Audiobooks and the EPUB Working Groups.
+
+Please use the following form to have your organization join the group.
+The form will also instruct you how to nominate participants:
+    https://www.w3.org/groups/wg/pm/join/
+
+Current participants need to rejoin the group.
+
+Please consider diversity when proposing people to participate in W3C
+groups. Representation from a wider group of people, especially people
+from under-represented groups, is vital for creating web standards that
+meet the needs of the wider web community.
+
+The group chairs are Wendy Reid, Rakuten Kobo, and Shinya Takami (高見真也),
+Kadokawa. The Team Contact is Ivan Herman, 0.20FTE.
+
+More information about the group can be found on the group home page:
+     https://www.w3.org/groups/wg/pm/
+
+----
+Results of Charter Call for Review
+----
+We called for charter review on @@@@@ :
+https://lists.w3.org/Archives/Member/w3c-ac-members/@@@@@@
+
+Thanks to the @@ Members who provided input:
+https://www.w3.org/2002/09/wbs/33280/pmwg-recharter/results
+
+There were @@ members supporting the charter as is, @@ members supported
+the charter with suggested changes, most of them were incorporated in the
+final charter, @@ members abstained.
+
+To see all changes relative to the previous charter, follow this link:
+https://www.w3.org/2025/02/pm-wg-charter-old-diff.html
+
+To see all changes relative to the proposed charter that was under
+Member review, follow this link:
+https://www.w3.org/2025/02/pm-wg-charter-diff.html
+
+This announcement follows section 5.7.2 of the W3C Process Document:
+     https://www.w3.org/policies/process/20231103/#ACReviewAfter
+
+The Call for Participation follows section 4.4 of the W3C Process Document:
+     https://www.w3.org/policies/process/20231103/#cfp
+
+Thank you,
+
+For Philippe le Hégaret, W3C Strategy and Project Lead,
+Ivan Herman, Publishing Maintenance WG Team Contact;
+Xueyuan Jia, W3C Marketing & Communications
