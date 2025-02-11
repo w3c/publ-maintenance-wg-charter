@@ -1,7 +1,3 @@
 # Development of the Publication Maintenance WG charter, version 2024
 
-Development steps are:
-
-1. discussion among potential chairs
-2. initial review with the publishing steering committee and the PM Working Groups
-3. submit to the W3C strategy team for the usual chartering process.
+The new charter has been [announced](https://lists.w3.org/Archives/Public/public-pm-wg/2025Feb/0004.html) on 2025-02-11. This repository is now dormant.
