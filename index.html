@@ -155,132 +155,154 @@
 
             <section id="scope" class="scope">
                 <h2>Scope</h2>
-                <p>
-                    The Working Group plans to work on new technical features for the
-                    <a href="https://www.w3.org/TR/epub-33/">EPUB&nbsp;3.3</a>,
-                    <a href="https://www.w3.org/TR/epub-rs-33/">EPUB Reading Systems&nbsp;3.3</a>, and
-                    <a href="https://www.w3.org/TR/epub-a11y-11/">EPUB Accessibility&nbsp;1.1</a>
-                    Recommendations, answering the needs of the publishing community and based on previous incubation work. These are:
-                </p>
+                <section id="3.4">
+                    <h3>EPUB 3.4</h3>
+                    <p>
+                        The Working Group plans to work on new technical features for the
+                        <a href="https://www.w3.org/TR/epub-33/">EPUB&nbsp;3.3</a>,
+                        <a href="https://www.w3.org/TR/epub-rs-33/">EPUB Reading Systems&nbsp;3.3</a>, and
+                        <a href="https://www.w3.org/TR/epub-a11y-11/">EPUB Accessibility&nbsp;1.1</a>
+                        Recommendations, answering the needs of the publishing community and based on previous incubation work. These are:
+                    </p>
 
-                <ul>
-                    <li class="todo">Something about media overlays</li>
-                    <li>
-                        Define a standard way to publish Continuously Scrolled Comics (a.k.a. Webtoons) in EPUB. See the
-                        <a href="https://github.com/w3c/pm-wg/wiki/Continuously-Scrolled-Comics-(a.k.a.-Webtoons)-in-EPUB"
-                            >wiki page on the group's repository</a
-                        >
-                        for a background, and for further details and references.
-                    </li>
+                    <ul>
+                        <li>
+                            Define a standard way to publish Continuously Scrolled Comics (a.k.a. Webtoons) in EPUB. See the
+                            <a href="https://github.com/w3c/pm-wg/wiki/Continuously-Scrolled-Comics-(a.k.a.-Webtoons)-in-EPUB"
+                                >wiki page on the group's repository</a
+                            >
+                            for a background, and for further details and references.
+                        </li>
 
-                    <li>
-                        Define an interoperable annotation standard for EPUB, based on the W3C Web Annotation
-                        <a href="https://www.w3.org/TR/annotation-model/">Data Model</a>
+                        <li>
+                            Define an interoperable annotation standard for EPUB, based on the W3C Web Annotation
+                            <a href="https://www.w3.org/TR/annotation-model/">Data Model</a> and
+                            <a href="https://www.w3.org/TR/annotation-vocab/">Vocabulary</a>, aiming at interchangeable annotations.
+                            Standard annotation selectors can also be used as standard locators for location-based features such as
+                            bookmarks and citations. These features would be particularly important for educational and STEM publishing. See the
+                            <a href="https://github.com/readium/annotations">documentation</a>
+                            of the Readium specification on Annotations and its experimental implementation in EDRLab's
+                            <a href="https://thorium.edrlab.org/en/">Thorium Reader</a>
+                            that can be used as a starting point.
+                        </li>
+
+                        <li>
+                            Work with the Publishing CG's
+                            <a href="https://github.com/w3c/publ-a11y/">accessibility task force</a>
+                            to incorporate incubated features.
+                        </li>
+                        <li>Develop guidance to help publishers understand legislated ebook accessibility requirements, as appropriate.</li>
+                    </ul>
+
+                    <p>
+                        Furthermore, the Working Group will also work on features which, though mostly maintenance in nature, involve adding
+                        new features to the Recommendations. These are as follows:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Based on the analysis of current use and deployment, review and possibly update the specification of the
+                            fixed-layout properties addressing spreads (e.g.,
+                            <code>spread</code>, <code>page-spread-*</code>, <code>rendition:spread</code>). See the
+                            <a href="https://www.w3.org/2024/10/Manga_tpac_breakout.pdf">breakout presentation at TPAC 2024</a>.
+                        </li>
+                        <li>
+                            Explicitly define the relationship between the
+                            <code>&lt;script&gt;</code> element (including resources used by the referenced scripts) and exempt resources,
+                            for example in view of the inclusion of Web Assembly (<code>.wasm</code>) content in EPUB. See the (postponed)
+                            <a href="https://github.com/w3c/epub-specs/pull/2655">EPUB Pull Request</a>
+                            for further details.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Finally, the Working Group will also incubate issues without necessarily aiming at the creation of final
+                        Recommendations during the lifetime of this charter. The results may be incorporated in future versions of the EPUB
+                        specifications or published as Working Group notes. These include:
+                    </p>
+
+                    <ul>
+                        <li>Allow non-XML HTML as content document in EPUB.</li>
+                        <li>
+                            Address the general accessibility issues of fixed layout content, with a particular focus on areas where the
+                            content cannot currently meet WCAG requirements.
+                        </li>
+                        <li>
+                            Address issues related to the evolution of synchronized media in publishing, including the usage of technologies
+                            like
+                            <a href="https://www.w3.org/TR/webvtt1/">WebVTT</a>.
+                        </li>
+                        <li>
+                            Find an optimal way of expressing, in a machine-readable format, exemptions to the accessibility requirements of
+                            EPUB when local jurisdiction makes such exemptions possible.
+                        </li>
+                        <li>Address security or privacy issues that may arise and require changes in a Recommendation.</li>
+                    </ul>
+
+                    <p>
+                        As a result, the Working Group will produce an updated version of EPUB 3 and its accessibility guidelines, referred
+                        to as “EPUB&nbsp;3.4” and “EPUB Accessibility&nbsp;1.2”, respectively, in this document. It is a primary goal of the
+                        new EPUB version to remain backward compatible with EPUB&nbsp;3.3 (i.e., existing conformant EPUB&nbsp;3.3 would
+                        remain conformant EPUB&nbsp;3.4 documents).
+                    </p>
+                    <p id="isopas">
+                        Depending on community discussions and demands, this Working Group may also decide to submit the EPUB&nbsp;3.4, the
+                        EPUB Reading Systems&nbsp;3.4, and the EPUB Accessibility&nbsp;1.2 specifications to
+                        <a href="https://www.iso.org/committee/45020.html">ISO/IEC JTC1</a>
+                        to be published as ISO/IEC standards. If the decision is to proceed with a submission, this would follow the
+                        <a href="https://www.w3.org/2010/03/w3c-pas-submission.html">PAS Submission process</a>. This would obsolete the
+                        current ISO/IEC 23736-1-6:2020 standards based on
+                        <a href="https://idpf.org/epub/301/spec/epub-publications.html">EPUB&nbsp;3.0.1</a>
+                        (originally published in 2014), as well as the separate ISO/IEC 23761:2021 EPUB Accessibility standard. The PAS
+                        submission would not affect the current distribution rights of the documents, which will remain free on www.w3.org,
+                        and it can also be expected that the documents will be available on the ISO Web site at no costs as
+                        <a href="https://standards.iso.org/ittf/PubliclyAvailableStandards/index.html">JTC1 freely available standards</a>.
+                        The submission would only permit minor editorial changes on the versions of the specifications submitted to ISO.
+                    </p>
+                </section>
+                <section id="3.5">
+                    <h3>EPUB 3.5</h3>
+
+                    <p>
+                        The Working Group will also be working on new technical issues that were recently brought to attention by the
+                        community. These are:
+                    </p>
+
+                    <ul>
+                        <li class="todo">A reconsideration of the Media Overlay feature of EPUB</li>
+                        <li class="todo">"Light novels"</li>
+                    </ul>
+
+                    <p>
+                        This additional work will produce an updated version of EPUB 3, referred to as “EPUB&nbsp;3.5”. It is a primary goal
+                        of that new EPUB version to remain backward compatible with EPUB&nbsp;3.4 (i.e., existing conformant EPUB&nbsp;3.4
+                        would remain conformant EPUB&nbsp;3.5 documents).
+                    </p>
+                </section>
+                <section id="pubmanifest">
+                    <h3>Maintenance work</h3>
+
+                    <p>
+                        The Working Group also continues to maintain the
+                        <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>
                         and
-                        <a href="https://www.w3.org/TR/annotation-vocab/">Vocabulary</a>, aiming at interchangeable annotations. Standard
-                        annotation selectors can also be used as standard locators for location-based features such as bookmarks and
-                        citations. These features would be particularly important for educational and STEM publishing. See the
-                        <a href="https://github.com/readium/annotations">documentation</a>
-                        of the Readium specification on Annotations and its experimental implementation in EDRLab's
-                        <a href="https://thorium.edrlab.org/en/">Thorium Reader</a>
-                        that can be used as a starting point.
-                    </li>
+                        <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a>
+                        Recommendations, as well as related Notes such as the
+                        <a href="https://www.w3.org/TR/lpf/">Lightweight Packaging Format</a>. For these specifications,
+                        <a href="https://www.w3.org/policies/process/#class-4">class&nbsp;4</a>
+                        changes are allowed.
+                    </p>
 
-                    <li>
-                        Work with the Publishing CG's
-                        <a href="https://github.com/w3c/publ-a11y/">accessibility task force</a>
-                        to incorporate incubated features.
-                    </li>
-                    <li>Develop guidance to help publishers understand legislated ebook accessibility requirements, as appropriate.</li>
-                </ul>
-
-                <p>
-                    Furthermore, the Working Group will also work on features which, though mostly maintenance in nature, involve adding new
-                    features to the Recommendations. These are as follows:
-                </p>
-
-                <ul>
-                    <li>
-                        Based on the analysis of current use and deployment, review and possibly update the specification of the
-                        fixed-layout properties addressing spreads (e.g.,
-                        <code>spread</code>, <code>page-spread-*</code>, <code>rendition:spread</code>). See the
-                        <a href="https://www.w3.org/2024/10/Manga_tpac_breakout.pdf">breakout presentation at TPAC 2024</a>.
-                    </li>
-                    <li>
-                        Explicitly define the relationship between the
-                        <code>&lt;script&gt;</code> element (including resources used by the referenced scripts) and exempt resources, for
-                        example in view of the inclusion of Web Assembly (<code>.wasm</code>) content in EPUB. See the (postponed)
-                        <a href="https://github.com/w3c/epub-specs/pull/2655">EPUB Pull Request</a>
-                        for further details.
-                    </li>
-                </ul>
-
-                <p>
-                    Finally, the Working Group will also incubate issues without necessarily aiming at the creation of final Recommendations
-                    during the lifetime of this charter. The results may be incorporated in future versions of the EPUB specifications or
-                    published as Working Group notes. These include:
-                </p>
-
-                <ul>
-                    <li>Allow non-XML HTML as content document in EPUB.</li>
-                    <li>
-                        Address the general accessibility issues of fixed layout content, with a particular focus on areas where the content
-                        cannot currently meet WCAG requirements.
-                    </li>
-                    <li>
-                        Address issues related to the evolution of synchronized media in publishing, including the usage of technologies
-                        like
-                        <a href="https://www.w3.org/TR/webvtt1/">WebVTT</a>.
-                    </li>
-                    <li>
-                        Find an optimal way of expressing, in a machine-readable format, exemptions to the accessibility requirements of
-                        EPUB when local jurisdiction makes such exemptions possible.
-                    </li>
-                    <li>Address security or privacy issues that may arise and require changes in a Recommendation.</li>
-                </ul>
-
-                <p>
-                    As a result, the Working Group will produce an updated version of EPUB 3 and its accessibility guidelines, referred to
-                    as “EPUB&nbsp;3.4” and “EPUB Accessibility&nbsp;1.2”, respectively, in this document. It is a primary goal of the new
-                    EPUB version to remain backward compatible with EPUB&nbsp;3.3 (i.e., existing conformant EPUB&nbsp;3.3 would remain
-                    conformant EPUB&nbsp;3.4 documents).
-                </p>
-
-                <p id="isopas">
-                    Depending on community discussions and demands, this Working Group may also decide to submit the EPUB&nbsp;3.4, the EPUB
-                    Reading Systems&nbsp;3.4, and the EPUB Accessibility&nbsp;1.2 specifications to
-                    <a href="https://www.iso.org/committee/45020.html">ISO/IEC JTC1</a>
-                    to be published as ISO/IEC standards. If the decision is to proceed with a submission, this would follow the
-                    <a href="https://www.w3.org/2010/03/w3c-pas-submission.html">PAS Submission process</a>. This would obsolete the current
-                    ISO/IEC 23736-1-6:2020 standards based on
-                    <a href="https://idpf.org/epub/301/spec/epub-publications.html">EPUB&nbsp;3.0.1</a>
-                    (originally published in 2014), as well as the separate ISO/IEC 23761:2021 EPUB Accessibility standard. The PAS
-                    submission would not affect the current distribution rights of the documents, which will remain free on www.w3.org, and
-                    it can also be expected that the documents will be available on the ISO Web site at no costs as
-                    <a href="https://standards.iso.org/ittf/PubliclyAvailableStandards/index.html">JTC1 freely available standards</a>. The
-                    submission would only permit minor editorial changes on the versions of the specifications submitted to ISO.
-                </p>
-
-                <p>
-                    The Working Group also continues to maintain the
-                    <a href="https://www.w3.org/TR/pub-manifest/">Publication Manifest</a>
-                    and
-                    <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a>
-                    Recommendations, as well as related Notes such as the
-                    <a href="https://www.w3.org/TR/lpf/">Lightweight Packaging Format</a>. For these specifications,
-                    <a href="https://www.w3.org/policies/process/#class-4">class&nbsp;4</a>
-                    changes are allowed.
-                </p>
-
-                <p>
-                    For a complete list of documents maintained by this Working Group, see the
-                    <a href="https://www.w3.org/groups/wg/pm/publications">publication list</a>
-                    of the Group, as well as the documents published by the
-                    <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a>
-                    and
-                    <a href="https://www.w3.org/groups/wg/publishing/publications/">Digital Publishing</a>
-                    Working Groups.
-                </p>
+                    <p>
+                        For a complete list of documents maintained by this Working Group, see the
+                        <a href="https://www.w3.org/groups/wg/pm/publications">publication list</a>
+                        of the Group, as well as the documents published by the
+                        <a href="https://www.w3.org/groups/wg/epub/publications">EPUB</a>
+                        and
+                        <a href="https://www.w3.org/groups/wg/publishing/publications/">Digital Publishing</a>
+                        Working Groups.
+                    </p>
+                </section>
 
                 <section id="section-out-of-scope">
                     <h3 id="out-of-scope">Out of Scope</h3>
@@ -339,7 +361,10 @@
 
                 <section id="normative">
                     <h3>Normative Specifications</h3>
-                    <p>The Working Group will deliver the following W3C normative specifications:</p>
+                    <p>
+                        The Working Group will deliver the following W3C normative specifications for EPUB 3.4 (which will be followed by
+                        EPUB 3.5):
+                    </p>
 
                     <!--  https://www.w3.org/groups/wg/pm/deliverables/ -->
                     <dl data-timestamp="2026-04-29T09:06:58.019Z">
@@ -353,7 +378,7 @@
                                 content — including HTML, CSS, SVG, and other resources — for distribution in a single-file container.
                             </p>
                             <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> Q4 2027</p>
+                            <p><b>Expected completion:</b> Q4 2026</p>
                             <p>
                                 <b>Latest publication:</b>
                                 <a href="https://www.w3.org/TR/2026/WD-epub-34-20260417/">2026-04-17</a>
@@ -363,6 +388,36 @@
                                 <a href="https://www.w3.org/TR/2025/WD-epub-34-20250327/">https://www.w3.org/TR/2025/WD-epub-34-20250327/</a
                                 ><br />
                                 <a href="https://www.w3.org/mid/cfe-15299-4f2d3f6095ab5721ca6b6c4c6a77d4a3eb858ef6@w3.org"
+                                    >Exclusion period</a
+                                >
+                                began on 2025-03-27 and ended on 2025-08-24.
+                            </p>
+                            <p>
+                                <b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+                                <a href="https://www.w3.org/2025/02/pmwg-charter.html">https://www.w3.org/2025/02/pmwg-charter.html</a>
+                            </p>
+                        </dd>
+                        <dt id="epub-rs-34" class="spec">
+                            <a href="https://www.w3.org/TR/epub-rs-34/" rel="versionof">EPUB Reading Systems 3.4</a>
+                        </dt>
+                        <dd>
+                            <p>
+                                EPUB® 3 defines a distribution and interchange format for digital publications and documents. The EPUB
+                                format provides a means of representing, packaging, and encoding structured and semantically enhanced web
+                                content — including HTML, CSS, SVG and other resources — for distribution in a single-file container.
+                            </p>
+                            <p><b>Draft state:</b> Working Draft</p>
+                            <p><b>Expected completion:</b> Q4 2026</p>
+                            <p>
+                                <b>Latest publication:</b>
+                                <a href="https://www.w3.org/TR/2026/WD-epub-rs-34-20260417/">2026-04-17</a>
+                            </p>
+                            <p>
+                                <b>Exclusion Draft:</b>
+                                <a href="https://www.w3.org/TR/2025/WD-epub-rs-34-20250327/"
+                                    >https://www.w3.org/TR/2025/WD-epub-rs-34-20250327/</a
+                                ><br />
+                                <a href="https://www.w3.org/mid/cfe-15300-3a57b6effb5b33931a1c362a4965c639cf60e097@w3.org"
                                     >Exclusion period</a
                                 >
                                 began on 2025-03-27 and ended on 2025-08-24.
@@ -382,7 +437,7 @@
                                 publications.
                             </p>
                             <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> Q4 2027</p>
+                            <p><b>Expected completion:</b> Q4 2026</p>
                             <p>
                                 <b>Latest publication:</b>
                                 <a href="https://www.w3.org/TR/2026/WD-epub-a11y-12-20260330/">2026-03-30</a>
@@ -414,7 +469,7 @@
                                 document.
                             </p>
                             <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> Q4 2027</p>
+                            <p><b>Expected completion:</b> Q1 2027</p>
                             <p>
                                 <b>Latest publication:</b>
                                 <a href="https://www.w3.org/TR/2026/WD-epub-anno-10-20260425/">2026-04-25</a>
@@ -428,36 +483,6 @@
                                     >Exclusion period</a
                                 >
                                 began on 2026-02-24 and will end on 2026-07-24.
-                            </p>
-                            <p>
-                                <b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-                                <a href="https://www.w3.org/2025/02/pmwg-charter.html">https://www.w3.org/2025/02/pmwg-charter.html</a>
-                            </p>
-                        </dd>
-                        <dt id="epub-rs-34" class="spec">
-                            <a href="https://www.w3.org/TR/epub-rs-34/" rel="versionof">EPUB Reading Systems 3.4</a>
-                        </dt>
-                        <dd>
-                            <p>
-                                EPUB® 3 defines a distribution and interchange format for digital publications and documents. The EPUB
-                                format provides a means of representing, packaging, and encoding structured and semantically enhanced web
-                                content — including HTML, CSS, SVG and other resources — for distribution in a single-file container.
-                            </p>
-                            <p><b>Draft state:</b> Working Draft</p>
-                            <p><b>Expected completion:</b> Q4 2027</p>
-                            <p>
-                                <b>Latest publication:</b>
-                                <a href="https://www.w3.org/TR/2026/WD-epub-rs-34-20260417/">2026-04-17</a>
-                            </p>
-                            <p>
-                                <b>Exclusion Draft:</b>
-                                <a href="https://www.w3.org/TR/2025/WD-epub-rs-34-20250327/"
-                                    >https://www.w3.org/TR/2025/WD-epub-rs-34-20250327/</a
-                                ><br />
-                                <a href="https://www.w3.org/mid/cfe-15300-3a57b6effb5b33931a1c362a4965c639cf60e097@w3.org"
-                                    >Exclusion period</a
-                                >
-                                began on 2025-03-27 and ended on 2025-08-24.
                             </p>
                             <p>
                                 <b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
@@ -616,9 +641,14 @@
                     <h3>Timeline</h3>
                     <ul>
                         <li>2026 July: First teleconference</li>
-                        <li>2026 September: First CR snapshot for a new versions</li>
+                        <li>2026 July: First CR snapshot for EPUB 3.4, EPUB RS 3.4, and EPUB Accessibility 1.2</li>
+                        <li>2026 September: First CR snapshot for EPUB Annotations</li>
                         <li>2026 October: First F2F meeting</li>
-                        <li>2026 July: EPUB 3.4 final version</li>
+                        <li>2026 December: Rec for EPUB 3.4, EPUB RS 3.4, and EPUB Accessibility 1.2</li>
+                        <li>2026 December: FPWD for EPUB 3.5</li>
+                        <li>2027 February: Rec for EPUB Annotations</li>
+                        <li>2027 March: First CR snapshot for EPUB 3.5</li>
+                        <li>2028 February: Rec for EPUB 3.5</li>
                     </ul>
                 </section>
             </section>
