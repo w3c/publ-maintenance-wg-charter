@@ -156,33 +156,63 @@
                         Recommendations, answering the needs of the publishing community and based on previous incubation work. These are:
                     </p>
 
-                    <ul class="todo">
-                        <li>Updating the Media Overlay feature of EPUB</li>
-                        <li>Full-bleed images in reflowable content</li>
+                    <ul>
                         <li>
-                            Address issues related to the evolution of synchronized media in publishing, including the usage of technologies like <a
-                                href="https://www.w3.org/TR/webvtt1/">WebVTT</a>.
+                            Reconsider the <a href="https://www.w3.org/TR/epub-34/#sec-media-overlays">Media Overlay facilities</a> of EPUB 3.4, possibly
+                            adding new content features via the extension of <a href="https://www.w3.org/TR/SMIL3/">SMIL</a> terms, and/or WebVTT support.
                         </li>
+
                         <li>
-                            Review, and possibly extend, the <a href="https://www.w3.org/TR/epub-34/#sec-pkg-metadata">metadata section</a> of the EPUB package document in view of the different, formal citation formats required by, e.g., academic publishers.
+                            Full-bleed and page fitting images in reflowable content and light novels.
                         </li>
+
                         <li>
-                            Address the general accessibility issues of fixed layout content, with a particular focus on areas where the content
-                            cannot currently meet WCAG requirements.
+                            Address the general navigation and accessibility issues of fixed layout content (including pre-paginated
+                            and roll content).
                         </li>
-                       <li>
-                            Work with the Publishing CG's <a href="https://github.com/w3c/publ-a11y/">accessibility task force</a> to incorporate
-                            incubated features.
+
+                        <li>Evolve the roll layout content, based on new deployment experiences.
+                            <ul>
+                                <li>
+                                    (This feature has been recently added to EPUB 3 in version 3.4)
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
-                            Develop guidance to help publishers understand legislated ebook accessibility requirements, as appropriate.
+                            Review EPUB metadata with a focus on user experiences, requirements, and emerging technological capabilities.
+                            <ul>
+                                <li>
+                                    E.g., sideloading publications, generating academic citations, experiences with current publishing workflows,
+                                    or AI related features.
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
-                            Address security or privacy issues that may arise and require changes in a Recommendation.
+                            Clarifications and updates both to EPUB terminology and to better align EPUB terminology with Web Platform Recommendations.
+                            <ul>
+                                <li>E.g., file system terms in OCF, or the notion of top-level content documents.</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Work with the W3C the task forces of the <a href="https://www.w3.org/community/publishingcg/">Publishing CG</a>
+                            and the <a href="https://www.w3.org/community/accessible-syncmedia-pub/">Accessible Synchronized Multimedia for Publishing CG</a> to incorporate incubated features.
+                            <ul>
+                                <li>
+                                    E.g., the Accessibility Task Force of the Publishing CG, and its guidance to help publishers understand legislated ebook accessibility
+                                    requirements.
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            Address security, privacy, or internationalization issues that may arise and require changes
+                            in the Recommendations.
                         </li>
                    </ul>
-
-                    <aside class="todo">Editor’s Note: The final list, more detailed description, etc, will be added later, with a discussion planned at TPAC2026.</aside>
 
                     <p>
                         As a result, the Working Group will produce an updated version of EPUB 3 and its accessibility guidelines, referred to
@@ -219,9 +249,8 @@
                         published as ISO/IEC standards. This follows the <a href="https://www.w3.org/2010/03/w3c-pas-submission.html">PAS
                             Submission process</a>, and will obsolete the current ISO/IEC 23736-1-6:2020 standards based on <a
                             href="https://idpf.org/epub/301/spec/epub-publications.html">EPUB 3.0.1</a> (originally published in 2014), as
-                        well as the separate ISO/IEC 23761:2021 EPUB Accessibility standard. Whether this action happens under the current
-                        charter, or will have happened under the <a href="https://www.w3.org/2025/02/pmwg-charter.html">previous one</a> depends on
-                        the exact timing of the publication of the Recommendations. <span class="todo">This part will have to be updated when the AC vote starts in view of the actual timing of the submission.</span>
+                        well as the separate ISO/IEC 23761:2021 EPUB Accessibility standard. Preparation for this submission has already
+                        started under the <a href="https://www.w3.org/2025/02/pmwg-charter.html">previous charter</a>.
                     </p>
 
                     <p>
@@ -584,7 +613,7 @@
                     <h3>Timeline</h3>
                     <ul>
                         <li>T+0.5: First teleconference</li>
-                        <li>T+2: FPWD for EPUB 3.5, EPUB RS 3.5, and EPUB Accessibility 1.3</li>
+                        <li>T+4: FPWD for EPUB 3.5, EPUB RS 3.5, and EPUB Accessibility 1.3</li>
                         <li>T+12: First CR snapshot for EPUB Annotations 1.0</li>
                         <li>T+18: First CR snapshot for EPUB 3.5, EPUB RS 3.5, and EPUB Accessibility 1.3</li>
                         <li>T+23: Recommendation for EPUB 3.5, EPUB RS 3.5, EPUB Accessibility 1.3</li>
@@ -704,6 +733,19 @@
                                 for STEM accessibility; as well as accessibility impact of a specification. That Working Group may also develop new
                                 technologies that may impact future versions of Digital Publishing standards, such as the specification for <a
                                     href="https://www.w3.org/TR/spoken-html/">Spoken Presentation in HTML</a>.
+                            </p>
+                        </dd>
+
+                        <dt>
+                            <a href="https://www.w3.org/community/accessible-syncmedia-pub/">Accessible Synchronized Multimedia for Publishing Community Group</a>
+                        </dt>
+
+                        <dd>
+                            <p>
+                                The Accessible Synchronized Multimedia for Publishing CG works on sophisticated use cases, involving the usage of
+                                various media within EPUB Publications. An example may be a multimodal handbook providing information on
+                                planned escape routes and notifications in the  event of natural catastrophes like mud slides or grassland fires.
+                                These use cases should be considered for the update of Media Overlay features of EPUB 3.5.
                             </p>
                         </dd>
 
